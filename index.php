@@ -63,7 +63,7 @@
 					?>
 					<a href="#mod_plan1" onclick="ver_plan('0');"><li class="pyp_1">
 						<div><span>Economic</span></div>
-						<div><span>Sitio Web y Dominio gratis</span></div>
+						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
 						<div><span>Administración por SGAC | ECONOMIC</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla</span></div>
 						<div><span>M&aacute;s...</span></div>
@@ -71,7 +71,7 @@
 					</li></a>
 					<a href="#mod_plan2" onclick="ver_plan('1');"><li class="pyp_2">
 						<div><span>Deluxe</span></div>
-						<div><span>Sitio Web y Dominio gratis</span></div>
+						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
 						<div><span>Administración por SGAC | DELUXE</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla o Personalizado</span></div>
 						<div><span>Mucho M&aacute;s...</span></div>
@@ -79,7 +79,7 @@
 					</li></a>
 					<a href="#mod_plan3" onclick="ver_plan('2');"><li class="pyp_3">
 						<div><span>Ultimate</span></div>
-						<div><span>Sitio Web y Dominio gratis</span></div>
+						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
 						<div><span>Administración por SGAC | ULTIMATE</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla o Personalizado</span></div>
 						<div><span>Much&iacute;simo M&aacute;s...</span></div>
@@ -87,7 +87,7 @@
 					</li></a>
 					<a href="#mod_plan4" onclick="ver_plan('3');"><li class="pyp_4">
 						<div><span>Super-Economic</span></div>
-						<div><span>Sitio Web y Dominio gratis (.ve)</span></div>
+						<div><span>Sitio Web, Dominio (.ve) y Hosting incluido</span></div>
 						<div><span>Administración por SGAC | SUPER-ECONOMIC</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla</span></div>
 						<div><span>Much&iacute;simo M&aacute;s...</span></div>
