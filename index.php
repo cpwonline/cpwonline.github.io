@@ -200,7 +200,7 @@
 				</div>
 			</article>
 			<article class="art_4">
-				<div class="text"><h4>¿Qu&eacute; esperas para comprar tu web?</h4><a href="contacto/" class="btn-gen">Contactar</a></div>
+				<div class="text"><h4>¿Qu&eacute; esperas para comprar tu web?</h4><a href="contacto/?orden=1" class="btn-gen">Ordenar</a></div>
 			</article>
 			<article class="art_5">
 				<h3>Nuestros beneficios</h3>

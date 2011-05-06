@@ -157,6 +157,7 @@
 		}
 		#cpwonline header.cabecera img.nav_icon{
 			display:none;
+			cursor:pointer;
 		}
 		#cpwonline header.cabecera nav.menu{
 			display:inline-block;
@@ -689,7 +690,7 @@
 	}
 	#cpwonline div.contacto_2 div.dentro section.pregunta{
 		padding: .5cm;
-		background:#DDD;
+		background:hsla(0, 0%, 50%, .4);
 		color:#444;
 		margin-bottom:.5cm;
 		text-align:center;

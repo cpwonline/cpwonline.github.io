@@ -52,6 +52,7 @@
 								</section>
 								<!--Contactar-->
 									<section class="contactar">
+										<h4 style="padding:.4cm;margin-bottom:.3cm;background:#444;color:#fff;">Contactar</h4>
 										<input type="text" name="c_nya" placeholder="Nombres y apellidos"/>
 										<input type="email" name="c_email" placeholder="Email"/>
 										<input type="text" name="c_tel" placeholder="Tel&eacute;fono"/>
@@ -94,6 +95,7 @@
 									
 								<!--Ordenar-->
 									<section class="ordenar">
+										<h4 style="padding:.4cm;margin-bottom:.3cm;background:#444;color:#fff;">Ordenar</h4>
 										<h6>T&iacute;tulo de tu web: </h6>
 										<input type="text" name="o_titulo" required/>
 										<h6>Dominio 1: </h6>
@@ -121,15 +123,17 @@
 											</select>
 										</div>
 										<h6>Modelo web a elegir:</h6>
-										<select name="o_modelo">
-											<option value="A17-1">A17-1</option>
-											<option value="A17-2">A17-2</option>
-											<option value="A17-3">A17-3</option>
-											<option value="A17-4">A17-4</option>
-											<option value="A17-5">A17-5</option>
-											<option value="A18-1">A18-1</option>
-											<option value="A18-2">A18-2</option>
-										</select>
+										<div tag="cont_select_o_modelo">
+											<select name="o_modelo">
+												<option value="A17-1">A17-1</option>
+												<option value="A17-2">A17-2</option>
+												<option value="A17-3">A17-3</option>
+												<option value="A17-4">A17-4</option>
+												<option value="A17-5">A17-5</option>
+												<option value="A18-1">A18-1</option>
+												<option value="A18-2">A18-2</option>
+											</select>
+										</div>
 										<h6>Contenidos de la p&aacute;gina web:</h6>
 										<textarea name="o_contenidos"></textarea>
 										<h6>Moneda en la que desea pagar: </h6>
@@ -156,12 +160,17 @@
 								$plan = "Economic";
 							else
 								$plan = $_GET['plan'];
+							if(empty($_GET['modelo']))
+								$modelo = 1;
+							else
+								$modelo = $_GET['modelo'];
 			?>
 							<script>
 								document.querySelector("#cpwonline section.ordenar").style.display="block";
 								document.querySelector("#cpwonline section.contactar").style.display="none";
-								var select = "<?=$plan?>";
-								seleccionar(select);
+								var plan = "<?=$plan?>";
+								var modelo = "<?=$modelo?>";
+								seleccionar(plan, modelo);
 							</script>
 			<?php
 						}

@@ -1,15 +1,28 @@
-//Auto ajuste del plan por GET
-	function seleccionar(select){
+//Auto ajuste del plan y modelo por GET
+	function seleccionar(plan, modelo){
 		var dir="";
-		if(select=="Deluxe")
+		var dir2="";
+		if(plan=="Deluxe"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
-		
-		if(select=="Ultimate")
+			dir2 = '
+				
+											<select name="o_modelo">
+												<option value="A17-1">A17-1</option>
+												<option value="A17-2">A17-2</option>
+												<option value="A17-3">A17-3</option>
+												<option value="A17-4">A17-4</option>
+												<option value="A17-5">A17-5</option>
+												<option value="A18-1">A18-1</option>
+												<option value="A18-2">A18-2</option>
+											</select>
+			';
+		}
+		if(plan=="Ultimate"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate" selected>Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
-		
-		if(select=="Super-Economic")
+		}
+		if(plan=="Super-Economic"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe">Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic" selected>Super-Economic</option></select>';
-		
+		}
 		document.querySelector('#cpwonline div[tag="cont_select_o_plan"]').innerHTML = dir;
 	}
 $(document).ready(function(){
