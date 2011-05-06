@@ -5,8 +5,8 @@
 	
 	switch($tipo){
 		case 'iniciar':
-			$o_usuario = $_POST['o_usuario'];
-			$o_clave = $_POST['o_clave'];
+			$o_usuario = make_safe($_POST['o_usuario']);
+			$o_clave = make_safe($_POST['o_clave']);
 			$contador = $_POST['contador'];
 			
 			$con = $mysqli->query("SELECT * FROM ordenes WHERE o_usuario = '".$o_usuario."' AND o_clave = '".$o_clave."' LIMIT 1");

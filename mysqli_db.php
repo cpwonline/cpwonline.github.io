@@ -54,4 +54,8 @@
 		];
 		return $mes[$num];
 	}
+	function make_safe($v) {
+		$v = addslashes(trim($v))
+		return $v;
+	} 
 ?>
