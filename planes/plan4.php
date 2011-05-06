@@ -1,5 +1,7 @@
 <div class="vist_plan">
-	<div class="den"><h6>Sitio Web y Dominio:</h6> Gratis (Con extensi&oacute;n .ve)</div>
+	<div class="den"><h6>Sitio Web:</h6> S&iacute;</div>
+	<div class="den"><h6>Dominio:</h6> S&iacute; (Con extensi&oacute;n .ve)</div>
+	<div class="den"><h6>Hosting:</h6> S&iacute;</div>
 	<div class="den"><h6>Administración por SGAC:</h6> SUPER-ECONOMIC</div>
 	<div class="den"><h6>Dise&ntilde;o web:</h6> Plantilla</div>
 	<div class="den"><h6>Secci&oacute;n de contacto:</h6> S&iacute;</div>
