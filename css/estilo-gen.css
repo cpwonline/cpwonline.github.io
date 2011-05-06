@@ -10,7 +10,7 @@
 		}
 			
 		#cpwonline .btn-gen{
-			font-size:1.1em;
+			font-size:12pt;
 			color:#fff;
 			text-decoration:none;
 			background: hsla(120,100%,33%,0.7);
@@ -23,14 +23,13 @@
 			-ms-transition:0.3s all;
 		}
 		#cpwonline .btn-gen:hover{
-			background: hsla(120,100%,70%,0.7);
+			background: hsla(120,100%,40%,0.7);
 		}
-
 		#cpwonline .btn-gen2{
-			font-size:1.1em;
-			color:#fff;
+			font-size:12pt;
+			color:#FFF;
 			text-decoration:none;
-			background: hsla(120,0%,50%,0.6);
+			background: #AAA;
 			padding:10px 15px;
 			border:none;
 			cursor:pointer;
@@ -40,7 +39,42 @@
 			-ms-transition:0.3s all;
 		}
 		#cpwonline .btn-gen2:hover{
-			background: hsla(120,0%,80%,0.6);
+			background: #fff;
+			color:#444;
+		}
+		#cpwonline .btn-gen3{
+			font-size:12pt;
+			color:#009bd0;
+			text-decoration:none;
+			background: none;
+			padding:10px 15px;
+			border:2px solid #009bd0;
+			cursor:pointer;
+			transition:0.3s all;
+			-webkit-transition:0.3s all;
+			-moz-transition:0.3s all;
+			-ms-transition:0.3s all;
+		}
+		#cpwonline .btn-gen3:hover{
+			background: #009bd0;
+			color:#fff;
+		}
+		#cpwonline .btn-gen4{
+			font-size:12pt;
+			color:#fff;
+			text-decoration:none;
+			background: none;
+			padding:10px 15px;
+			border:2px solid #fff;
+			cursor:pointer;
+			transition:0.3s all;
+			-webkit-transition:0.3s all;
+			-moz-transition:0.3s all;
+			-ms-transition:0.3s all;
+		}
+		#cpwonline .btn-gen4:hover{
+			background: #fff;
+			color:#444;
 		}
 		#cpwonline div.espera{
 			z-index:10000;

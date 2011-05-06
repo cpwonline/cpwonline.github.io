@@ -43,12 +43,12 @@
 							<article class="art_fund">
 								<div class="img"><img src="../images/equipo/fund_jfrivas.png" alt=""/></div>
 								<h3>Jos&eacute; F. Rivas</h3>
-								<p>Cofundador, CEO y COO de CPW Online.</p>
+								<p>Cofundador, CEO y CFO de CPW Online.</p>
 							</article>
 							<article class="art_fund">
 								<div class="img"><img src="../images/equipo/fund_deguerra.png" alt=""/></div>
 								<h3>Damaglys E. Guerra</h3>
-								<p>Cofundador, CSO y CMO de CPW Online.</p>
+								<p>Cofundador, COO y CSO de CPW Online.</p>
 							</article>
 						</section>
 					</div>

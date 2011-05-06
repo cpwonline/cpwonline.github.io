@@ -44,7 +44,7 @@
 						<h3 class="swing" id="men_unaweb" onclick="fondo_ale();">¿Una web?</h3>
 						<h3>&iexcl;Ten la tuya&excl;</h3>
 						<a href="perfil/" class="btn-gen">Login</a>
-						<a href="contacto/" class="btn-gen2">Contactar</a>
+						<a href="contacto/" class="btn-gen4">Contactar</a>
 					</div>
 				</div>
 			</article>
@@ -205,19 +205,19 @@
 			<article class="art_5">
 				<h3>Nuestros beneficios</h3>
 				<div class="col_1">
-					<img src="images/g_lla.png" alt="">
+					<img src="images/g_lla.png" alt=""/>
 					<h5>Comunicaci&oacute;n constante</h5>
 					<p>Para una mejor comunicaci&oacute;n contamos con: secci&oacute;n de contacto, diagn&oacute;stico de errores, chats en redes sociales (WhatsApp, Facebook, Messenger), correos electr&oacute;nicos.</p>
 					<a class="btn-gen" href="informacion/#inf_compra">Leer m&aacute;s</a>
 				</div>
 				<div class="col_2">
-					<img src="images/g_din.png" alt="">
+					<img src="images/g_din.png" alt=""/>
 					<h5>Ahorra dinero</h5>
 					<p>Nuestros Planes y precios son &uacute;nicos en el mercado, ¡Compru&eacute;balo por ti mismo! Con precios tan induditables ¿C&oacute;mo dudar?</p>
 					<a class="btn-gen" href="informacion/#planes_precios">Leer m&aacute;s</a>
 				</div>
 				<div class="col_3">
-					<img src="images/g_ser.png" alt="">
+					<img src="images/g_ser.png" alt=""/>
 					<h5>Servicio de prueba</h5>
 					<p>&iquest;Sab&iacute;as que puedes pedir tu p&aacute;gina web gratuitamente? ¡S&iacute;! Si tienes temor de perder dinero, tiempo o esfuerzo, nuestras web primero se crean gratuitamente, y si quieres comprar o no, es tu decisi&oacute;n; sin compromisos.</p>
 					<a class="btn-gen" href="informacion/#inf_compra">Leer m&aacute;s</a>
@@ -227,7 +227,7 @@
 				<div class="text">
 					<h4>
 						&iquest;No est&aacute;s seguro? &iquest;M&aacute;s informaci&oacute;n?
-						<a href="informacion/" class="btn-gen2">Leer m&aacute;s</a>
+						<a href="informacion/" class="btn-gen3">Leer m&aacute;s</a>
 					</h4>
 					<h4>
 						Tambi&eacute;n puedes ver nuestros modelos web

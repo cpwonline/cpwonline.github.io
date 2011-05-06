@@ -48,7 +48,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/informacion_compra_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/informacion_compra_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/informacion_compra_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 				<div class="col_1" style="background:#835;" id="planes_precios">
@@ -60,7 +60,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/planes_precios_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/planes_precios_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/planes_precios_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 				<div class="col_1" style="background:#345;" id="modelos">
@@ -72,7 +72,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/modelos_web_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/modelos_web_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/modelos_web_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 				<div class="col_1" style="background:#938;display:none;" id="dal15">
@@ -84,7 +84,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/dal15_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/dal15_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/dal15_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 				<div class="col_1" style="background:#883;display:none;" id="sgac">
@@ -96,7 +96,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/sgac_manual_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/sgac_manual_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/sgac_manual_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 				<div class="col_1" style="background:#092;" id="empresa">
@@ -108,7 +108,7 @@
 					</div>
 					<div class="col_1_der">
 						<img class="exc" src="img/empresa_cpwonline.png" alt=""/><br>
-						<a class="btn-gen2" href="pdf/empresa_cpwonline.pdf" target="_blank">Descargar</a>
+						<a class="btn-gen4" href="pdf/empresa_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
 			</article>
