@@ -1,21 +1,20 @@
 //Auto ajuste del plan y modelo por GET
+	function escoge_modelo(modelo){
+		var select = '<select name="o_modelo">';
+		var opt1 = '<option value="A17-1">A17-1</option>';
+		var opt2 = '<option value="A17-2">A17-2</option>';
+		var opt3 = '<option value="A17-3">A17-3</option>';
+		var opt4 = '<option value="A17-4">A17-4</option>';
+		var opt5 = '<option value="A17-5">A17-5</option>';
+		var opt6 = '<option value="A18-1">A18-1</option>';
+		var opt7 = '<option value="A18-2">A18-2</option>';
+		var fin = '</select>';
+		while()
+	}
 	function seleccionar(plan, modelo){
 		var dir="";
-		var dir2="";
 		if(plan=="Deluxe"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
-			dir2 = '
-				
-											<select name="o_modelo">
-												<option value="A17-1">A17-1</option>
-												<option value="A17-2">A17-2</option>
-												<option value="A17-3">A17-3</option>
-												<option value="A17-4">A17-4</option>
-												<option value="A17-5">A17-5</option>
-												<option value="A18-1">A18-1</option>
-												<option value="A18-2">A18-2</option>
-											</select>
-			';
 		}
 		if(plan=="Ultimate"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate" selected>Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
@@ -24,6 +23,7 @@
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe">Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic" selected>Super-Economic</option></select>';
 		}
 		document.querySelector('#cpwonline div[tag="cont_select_o_plan"]').innerHTML = dir;
+		document.querySelector('#cpwonline div[tag="cont_select_o_modelo"]').innerHTML = escoge_modelo(modelo);
 	}
 $(document).ready(function(){
 	//Actualización del precio//
