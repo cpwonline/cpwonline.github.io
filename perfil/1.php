@@ -259,13 +259,7 @@
 									<div class="cam"><?=$pa_comentarios?></div>
 									<div class="cam"><?=$pa_freg?></div>
 									<div class="cam"><img src="<?=$pa_imagen?>" alt="" style="width:100px;height:100px;"/></div>
-							<?php
-									if(!empty($pa_imagen)){
-							?>
 									<div class="cam"><a class="btn-gen2 eliminar_pago" tag="<?=$pa_id?>">Eliminar<i id="<?=$pa_id?>" tag="<?=$pa_imagen?>"></i></a></div>
-							<?php
-									}
-							?>
 								</div>
 							<?php
 							}

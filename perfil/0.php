@@ -250,13 +250,13 @@
 												<a class="btn-gen subir_imagen_pago"  tag="'.$pa_id.'">Subir</a>
 											</div>';
 									}else{
-										echo '<div class="cam">S&iacute;</div>
-											<div class="cam">
-												<a class="btn-gen2 eliminar_pago" tag="'.$pa_id.'">Eliminar
-												<i id="'.$pa_id.'" tag="'.$pa_imagen.'"></i></a>
-											</div>';
+										echo '<div class="cam">S&iacute;</div>';
 									}
 							?>
+									<div class="cam">
+										<a class="btn-gen2 eliminar_pago" tag="<?=$pa_id?>">Eliminar
+										<i id="<?=$pa_id?>" tag="<?=$pa_imagen?>"></i></a>
+									</div>
 								</div>
 							<?php
 							}

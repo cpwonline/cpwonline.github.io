@@ -10,7 +10,7 @@
 			$con = $mysqli->query("DELETE FROM pagos WHERE pa_id = '".$pa_id."' AND pa_usuario = '".$_SESSION['o_usuario']."' ");
 			if($con){
 				echo 'El pago fue borrado con &eacute;xito, actualice la secci&oacute;n <i>Mis Pagos</i> para ver sus pagos.';
-				unlink($pa_imagen);
+				if(!empty($pa_imagen)) unlink($pa_imagen);
 			}else
 				echo 'Ha ocurrido un error al intentar borrar el pago, intente nuevamente.';
 		break;
