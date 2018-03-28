@@ -1,0 +1,559 @@
+
+@media screen and (min-width:0px) and (max-width:750px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:General-----------------------------------------------------------*/
+		
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1{
+					padding:.5cm 0 .5cm 0;
+				}
+				#cpwonline article.art_1 div.f_1{
+					height:2cm;
+				}
+				#cpwonline article.art_1 i.cuadro1{
+					left: 5%;
+					top: 5%;
+					display:none;
+				}
+				#cpwonline article.art_1 i.cuadro2{
+					left: 35%;
+					top: 3%;
+				}
+				#cpwonline article.art_1 img{
+					left:15%;
+					top: 15%;
+					width:150px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin:0;
+					background:none;
+					margin-right:15%;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(1){
+					font-size:26pt;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(2){
+					font-size:20pt;
+					margin-bottom: .4cm;
+				}
+				#cpwonline article.art_1 div.text a{
+					font-size:10pt;
+				}
+}
+
+@media screen and (max-width:320px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:General---------------------------------------------------------*/
+		
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1{
+					padding:0cm;
+				}
+				#cpwonline article.art_1 div.f_1{
+					height:2cm;
+				}
+				#cpwonline article.art_1 i.cuadro1{
+					left: 5%;
+					top: 5%;
+					display:none;
+				}
+				#cpwonline article.art_1 i.cuadro2{
+					left: 35%;
+					top: 3%;
+				}
+				#cpwonline article.art_1 img{
+					left:11%;
+					top: 25%;
+					width:110px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin:0;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(1){
+					font-size:20pt;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(2){
+					font-size:14pt;
+					margin-bottom: .4cm;
+				}
+				#cpwonline article.art_1 div.text a{
+					font-size:10pt;
+				}
+}
+@media screen and (min-width:321px) and (max-width:350px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:General---------------------------------------------------------*/
+		
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:5%;
+					width:110px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:0%;
+				}
+}
+@media screen and (min-width:350px) and (max-width:410px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:General---------------------------------------------------------*/
+		
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:5%;
+					width:120px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:6%;
+				}
+}
+@media screen and (min-width:410px) and (max-width:460px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:General---------------------------------------------------------*/
+		
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:10%;
+					width:130px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:8%;
+				}
+}
+@media screen and (min-width:570px) and (max-width:650px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:14%;
+					top: 12%;
+					width:170px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:17%;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(1){
+					font-size:30pt;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(2){
+					font-size:24pt;
+				}
+}
+
+@media screen and (min-width:650px) and (max-width:700px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 div.f_1{
+					height:2.2cm;
+				}
+				#cpwonline article.art_1 img{
+					left:14%;
+					top: 12%;
+					width:170px;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:19%;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(1){
+					font-size:34pt;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(2){
+					font-size:28pt;
+				}
+}
+@media screen and (min-width:700px) and (max-width:750px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 div.f_1{
+					height:2.4cm;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:21%;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(1){
+					font-size:36pt;
+				}
+				#cpwonline article.art_1 div.text h3:nth-child(2){
+					font-size:30pt;
+				}
+}
+@media screen and (min-width:750px) and (max-width:800px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 div.f_1{
+					height:4.4cm;
+				}
+				#cpwonline article.art_1 img{
+					left:10%;
+					top: 15%;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:5%;
+				}
+}
+@media screen and (min-width:800px) and (max-width:850px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:10%;
+					top: 15%;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:4%;
+				}
+}
+@media screen and (min-width:850px) and (max-width:900px) {
+	/*PÁGINA: PRINCIPAL*/
+		/*BLOQUE:Contenedor--------------------------------------------------------*/
+			/*SECCIÓN:art_1---------------------------------------------------------*/
+				#cpwonline article.art_1 img{
+					left:15%;
+					top: 15%;
+				}
+				#cpwonline article.art_1 div.text{
+					margin-right:7%;
+				}
+}
+@media screen and (max-width:860px){
+	/*PÁGINA: TODAS*/
+		/*BLOQUE:General---------------------------------------------------------*/
+			
+		/*BLOQUE:Cabecera--------------------------------------------------------*/
+			#cpwonline header.cabecera img.nav_icon{
+				position:absolute;
+				right:5px;
+				top:5px;
+				display:block;
+			}
+			#cpwonline header.cabecera img.nav_icon:active{
+				opacity:.5;
+			}
+			#cpwonline header.cabecera div.logo{
+				margin-left:.2cm;
+			}
+			#cpwonline header.cabecera nav.menu{
+				position:fixed;
+				padding:0;
+				height:100%;
+				width:100%;
+				top:-20px;
+				right:-200px;
+				background:none;
+				z-index:1000;
+				transition:.3s all;
+				-moz-transition:.3s all;
+				-webkit-transition:.3s all;
+				overflow:auto;
+			}
+			#cpwonline header.cabecera nav.menu ul.menu{
+				float:right;
+				width:50%;
+				background:#444;
+				height:100%;
+			}
+			#cpwonline header.cabecera nav.menu ul.menu li{
+				display:block;
+				margin:0 0 .2cm 0;
+				text-align:left;
+				padding:0;
+				width:100%;
+			}
+			#cpwonline header.cabecera nav.menu ul.menu li a{
+				color:#FFF;
+				display:block;
+				margin:0;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-ms-user-select:none;
+			}
+			#cpwonline header.cabecera nav.menu ul.menu li a#prin{
+				color:#00bdf0;
+				background:none;
+			}
+			#cpwonline header.cabecera nav.menu ul.menu li a#prin:hover,
+			#cpwonline header.cabecera nav.menu ul.menu li a:hover{
+				background:#33cc66;
+				color:#fff;
+			}
+			#cpwonline .cerrar_nav{
+				display:block;
+			}
+			#cpwonline a.cerrar_nav{
+				background:#00bdf0;
+			}
+
+		/*BLOQUE: Footer---------------------------------------------*/
+			#cpwonline footer.pie{
+				padding:0cm;
+				text-align:center;
+			}
+			#cpwonline footer.pie .cab_footer{
+				text-align:center;
+			}
+			#cpwonline footer.pie .cab_footer div.logo{
+				width:4cm;
+				float:none;
+				margin:.3cm 0 0 0;
+			}
+			#cpwonline footer.pie .cab_footer div.logo img{
+				width:4cm;
+			}
+			#cpwonline footer.pie .cab_footer nav.menu{
+				width:90%;
+				float:none;
+				padding:0cm;
+				margin:0;		
+			}
+			#cpwonline footer.pie .cab_footer nav.menu ul.menu li{
+				margin-left:0cm;
+			}
+			#cpwonline footer.pie .cerrar_nav{
+				display:none;
+			}
+		/*BLOQUE: Coontenedor---------------------------------------------*/
+			/*SECCIÓN:art_2---------------------------------------------------------*/
+				#cpwonline article.art_2 .list_pyp{
+					padding:.2cm;
+					font-size:16pt;
+					text-align:center;
+				}
+				#cpwonline article.art_2 .list_pyp li.pyp_1,
+				#cpwonline article.art_2 .list_pyp li.pyp_2,
+				#cpwonline article.art_2 .list_pyp li.pyp_3,
+				#cpwonline article.art_2 .list_pyp li.pyp_4{
+					width:85%;
+					height: 10cm;
+					padding:.2cm;
+				}
+				#cpwonline article.art_2 div.verEn select{
+					padding:7px 15px;
+					font-size:12pt;
+					width:90%;
+				}
+				#cpwonline div.vist_plan div{
+					font-size:12pt;
+				}
+				#cpwonline div.vist_plan div h6{
+					font-size:12pt;
+				}
+				#mod_plan1,
+				#mod_plan1:target,
+				#mod_plan2,
+				#mod_plan2:target,
+				#mod_plan3,
+				#mod_plan3:target,
+				#mod_plan4,
+				#mod_plan4:target{
+					width:95%;
+					top:5%;
+					left:2.5%;
+					right:2.5%;
+				}
+			/*SECCIÓN:art_3---------------------------------------------------------*/
+				#cpwonline article.art_3 {
+					text-align:center;
+				}
+				#cpwonline article.art_3 div.col_1,
+				#cpwonline article.art_3 div.col_2,
+				#cpwonline article.art_3 div.col_3{
+					width:70%;
+					padding:.9cm;
+					float:none;
+					border:none;
+				}
+			/*SECCIÓN:art_4---------------------------------------------------------*/
+				#cpwonline article.art_4{
+					padding:1cm 0 1cm 0;
+				}
+				#cpwonline article.art_4 div.text h4{
+					font-size:18pt;
+					margin:0 0 .4cm 0;
+				}
+			/*SECCIÓN:art_5---------------------------------------------------------*/
+				#cpwonline article.art_5 div.col_1,
+				#cpwonline article.art_5 div.col_2,
+				#cpwonline article.art_5 div.col_3{
+					width:90%;
+					float:none;
+					height:auto;
+				}
+				#cpwonline article.art_5 div.col_1 p,
+				#cpwonline article.art_5 div.col_2 p,
+				#cpwonline article.art_5 div.col_3 p{
+					margin-bottom:.4cm;
+				}
+				#cpwonline article.art_5 div.col_1 a,
+				#cpwonline article.art_5 div.col_2 a,
+				#cpwonline article.art_5 div.col_3 a{
+					position:relative;
+					float:none;
+					text-align:center;
+					display:inline-block;
+					width:90%;
+				}
+	/*PÁGINA:MODELOS---------------------------------------------------------*/
+		#cpwonline article.art_6 div.cont_mod div.mod_1{
+			width:90%;
+		}
+	/*PÁGINA:CONTACTO---------------------------------------------------------*/
+		#cpwonline article.art_7{
+			padding:0cm;
+			text-align:center;
+		}
+		#cpwonline article.art_7 div.f_1{
+			display:none;
+		}
+		#cpwonline article.art_7 img[src="../images/img_art_1_3.png"]{
+			display:none;
+		}
+		#cpwonline div.contacto_1{
+			padding: 0cm 0 .5cm 0;
+			display:inline-block;
+			float:none;
+			width:90%;
+			height:auto;
+			position:relative;
+		}
+		#cpwonline div.contacto_1 h3:nth-child(1),
+		#cpwonline div.contacto_1 h3:nth-child(2),
+		#cpwonline div.contacto_1 h3:nth-child(3){
+			position:relative;
+		}
+		#cpwonline div.contacto_1 h3:nth-child(1){
+			margin-top:.8cm;
+			font-size:28pt;
+			text-align:center;
+		}
+		#cpwonline div.contacto_1 h3:nth-child(2){
+			font-size:24pt;
+			text-align:center;
+		}
+		#cpwonline div.contacto_1 h3:nth-child(3){
+			font-size:20pt;
+			text-align:center;
+			margin-bottom:.8cm;
+		}
+		#cpwonline div.contacto_2{
+			height:auto;
+			width:100%;
+			padding:0cm;
+			text-align:center;
+		}
+		#cpwonline div.contacto_2 div[tag="form_contact"]{
+			width:100%;
+			background:none;
+			padding: 0;
+			margin-left:0cm;
+			float:none;
+			height:auto;
+			overflow:hidden;
+		}
+		#cpwonline div.contacto_2 div.dentro{
+			overflow: hidden;
+			height:auto;
+			margin-bottom: 0;
+		}
+		#cpwonline div.contacto_2 input{
+			display:inline-block;
+			width:85%;
+		}
+		#cpwonline div.contacto_2 select{
+			padding:10px 15px;
+			display:inline-block;
+			width:90%;
+			margin-bottom:.5cm;
+		}
+		#cpwonline div.m_error{
+			padding:.5cm 0cm .5cm 0cm;
+			font-size:14pt;
+			color:#444;
+			background:hsla(0,50%,50%,.5);
+			display:none;
+			margin:0;
+		}
+	/*PÁGINA:Información---------------------------------------------------------*/
+		#cpwonline article.art_8 div.col_1{
+			text-align:center;
+		}
+		#cpwonline article.art_8 div.col_1_izq{
+			float:none;
+			width:95%;
+		}
+		#cpwonline article.art_8 div.col_1:nth-child(1) div.col_1_izq{
+			margin-top:0cm;
+		}
+		/*Bloque: Desarrolladores----------------------------------------*/
+			#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline article.art_fund{
+				width:90%;
+			}
+		
+		#cpwonline article.art_8 div.col_1_izq p{
+			line-height: .6cm;
+		}
+		#cpwonline article.art_8 div.col_1_der{
+			float:none;
+			width:95%;
+		}
+		#cpwonline article.art_8 div.col_1_der img:nth-child(1){
+			width:6cm;
+			margin-top:.5cm;
+		}
+		#cpwonline article.art_8 div.col_1 img.exc{
+			width:4cm;
+		}
+
+	/*PÁGINA:Perfil---------------------------------------------------------*/
+		#cpwonline article.art_9{
+			padding:.1cm;
+		}
+		#cpwonline article.art_9 section.login{
+			width:90%;
+			padding:0cm;
+		}
+		#cpwonline article.art_9 section.login div.cont_input{
+			margin-bottom:1cm;
+		}
+		#cpwonline article.art_9 section.login div.cont_input input{
+			display:inline-block;
+		}
+		#cpwonline article.art_9 section.login a{
+			display:block;
+			margin-bottom:.4cm;
+		}
+		#cpwonline article.art_9 section.perfil ul.arriba{
+			padding:0cm;
+		}
+		#cpwonline article.art_9 section.perfil ul.arriba li{
+			display:block;
+			float:none;
+			margin:0;
+			padding:4px 7px;
+		}
+		#cpwonline article.art_9 section.perfil section.abajo{
+			padding:0;
+		}
+		#cpwonline article.art_9 section.perfil section.abajo article article.bloque{
+			width:98%;
+			float:none;
+			overflow:auto;
+		}
+		#cpwonline article.art_9 section.perfil section.abajo article article.bloque.b1{
+			width:99%;
+		}
+		#cpwonline article.art_9 section.perfil section.abajo article article.bloque.b2{
+			width:99%;
+		}
+		#cpwonline article.art_9 section.perfil section.abajo article article.bloque h4:nth-child(1){
+			padding:.2cm;
+		}
+
+}

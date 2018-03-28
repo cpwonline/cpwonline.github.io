@@ -1,0 +1,83 @@
+#cpwonline .gen_modal {
+	opacity: 0;
+	position:absolute;
+	top:-50%;
+	visibility: hidden;
+	width:50%;
+	box-shadow:0 3px 7px rgba(0,0,0,.25);
+	box-sizing:border-box;
+	transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	z-index:10000;
+}
+#cpwonline .gen_modal  .header,
+#cpwonline .gen_modal  .footer {
+	border-bottom: 1px solid #e7e7e7;
+	border-radius: 5px 5px 0 0;
+}
+#cpwonline .gen_modal .footer {
+	border:none;
+	border-top: 1px solid #e7e7e7;
+	border-radius: 0 0 5px 5px;
+	background:#ddd;
+	overflow:hidden;
+}
+#cpwonline .gen_modal  h2 {
+	margin:0;
+}
+#cpwonline .gen_modal  .btn-gen,
+#cpwonline .gen_modal  .btn-gen2{
+	float:none;
+}
+#cpwonline .gen_modal  section.cont_a{
+	text-align:right;
+}
+#cpwonline .gen_modal  .copy,
+#cpwonline .gen_modal  .header, 
+#cpwonline .gen_modal .footer {
+	padding:15px;
+}
+#cpwonline .modal-content {
+	background: #f7f7f7;
+	position: relative;
+	z-index: 20;
+	border-radius:5px;
+}
+#cpwonline .gen_modal  .copy {
+	background: #fff;
+}
+ 
+#cpwonline .gen_modal  .overlay {
+	background-color: #000;
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+/*Targets_______*/
+#cpwonline #m_int:target {
+	opacity: 1;
+	top:80%;
+	visibility: visible;
+}
+#cpwonline #mod_plan1,
+#cpwonline #mod_plan1:target,
+#cpwonline #mod_plan2,
+#cpwonline #mod_plan2:target,
+#cpwonline #mod_plan3,
+#cpwonline #mod_plan3:target,
+#cpwonline #mod_plan4,
+#cpwonline #mod_plan4:target{
+	width:80%;
+	top:5%;
+	left:10%;
+	right:10%;
+	margin:0;
+	opacity: 1;
+	display:none;
+	visibility: visible;
+}

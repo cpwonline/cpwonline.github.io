@@ -1,0 +1,972 @@
+/*PÁGINA: PRINCIPAL*/
+	/*BLOQUE:General---------------------------------------------------------*/
+		* {
+			padding:0;
+			margin:0;
+		}
+		#cpwonline{
+			font-family: 'Source Sans Pro', sans-serif;
+			color:#444;
+		}
+			
+		#cpwonline .btn-gen{
+			font-size:1.1em;
+			color:#fff;
+			text-decoration:none;
+			background: hsla(120,100%,33%,0.7);
+			padding:10px 15px;
+			border:none;
+			cursor:pointer;
+			transition:0.3s all;
+			-webkit-transition:0.3s all;
+			-moz-transition:0.3s all;
+			-ms-transition:0.3s all;
+		}
+		#cpwonline .btn-gen:hover{
+			background: hsla(120,100%,70%,0.7);
+		}
+
+		#cpwonline .btn-gen2{
+			font-size:1.1em;
+			color:#fff;
+			text-decoration:none;
+			background: hsla(120,0%,50%,0.6);
+			padding:10px 15px;
+			border:none;
+			cursor:pointer;
+			transition:0.3s all;
+			-webkit-transition:0.3s all;
+			-moz-transition:0.3s all;
+			-ms-transition:0.3s all;
+		}
+		#cpwonline .btn-gen2:hover{
+			background: hsla(120,0%,80%,0.6);
+		}
+		#cpwonline div.espera{
+			z-index:10000;
+			overflow:hidden;
+			position:fixed;
+			transition:1s all;
+			-moz-transition:1s all;
+			-webkit-transition:1s all;
+			bottom:.5cm;
+			right:-50%;
+			width:25%;
+			padding:12px 25px;
+			background:hsla(125, 0%, 30%, .9);
+			color:#fff;
+			font-size:10pt;
+			text-align:center;
+			border-radius:.1cm;
+			-webkit-border-radius:.1cm;
+			-moz-border-radius:.1cm;
+		}
+		#cpwonline div.espera span{
+			color:#DDD;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-ms-user-select:none;
+		}
+		#cpwonline progress{
+			background:none;
+			background:#444;
+			border:none;
+			height:.5cm;
+		}
+		/*Tabla general*/
+			#cpwonline div.tabla_gen{
+				padding:.7cm .5cm .7cm .5cm;
+				display:table;
+				width:85%;
+				font-size:12pt;
+				overflow:hidden;
+				text-align:left;
+				border-spacing:7px;
+			}
+			#cpwonline div.tabla_gen select,
+			#cpwonline div.tabla_gen input{
+				padding:8px 12px;
+				border:none;
+				color:#444;
+				border:1px solid #ccc;
+				max-width:4cm;
+			}
+			#cpwonline div.tabla_gen textarea{
+				width:100%;
+				height:5cm;
+			}
+			#cpwonline div.tabla_gen  div.fil{
+				display:table-row;
+			}
+			#cpwonline div.tabla_gen  div.fil.pr div.cam{
+				border-bottom:1px solid #ccc;
+				border-spacing: 3px;
+				font-weight:bold;
+			}
+			#cpwonline div.tabla_gen  div.cam{
+				display:table-cell;
+			}
+			#cpwonline div.tabla_gen  div.cam a{
+				font-size:9pt;
+				padding:5px 15px;
+			}
+		/*Fin de tabla general*/
+		/*Botones*/
+			#cpwonline i.img_col{
+				width:33px;
+				height:33px;
+				display:inline-block;
+				background:#444;
+			}
+			#cpwonline i.img_col.boton{
+				border:1px solid hsla(0, 0%, 50%, 0);
+				cursor:pointer;
+			}
+			#cpwonline i.img_col.boton:hover{
+				border:1px solid hsla(0, 0%, 50%, 1);
+			}
+			#cpwonline i.img_col.boton:active{
+				border:1px solid #fff;
+			}
+			/*Blanco*/
+				#cpwonline i.img_col.actualizar.blan{background:url(../images/32x32_negro/actualizar.png)no-repeat;}
+			/*Negro*/
+				#cpwonline i.img_col.actualizar.neg{background:url(../images/32x32_negro/actualizar.png)no-repeat;}
+				
+	/*BLOQUE:Cabecera---------------------------------------------------------*/
+		#cpwonline header.cabecera{
+			padding:.2cm;
+			overflow:hidden;
+			background:#fff;
+			position:relative;
+		}
+		#cpwonline header.cabecera div.logo{
+			display:inline-block;
+			width:4cm;
+			float:left;
+			margin-left:1cm;
+			overflow:hidden;
+		}
+		#cpwonline header.cabecera div.logo img{
+			width:4cm;
+		}
+		#cpwonline header.cabecera img.nav_icon{
+			display:none;
+		}
+		#cpwonline header.cabecera nav.menu{
+			display:inline-block;
+			float:right;
+			width:70%;
+			overflow:none;
+			margin-top:.5cm;
+			font-weight:bold;
+		}
+		#cpwonline header.cabecera nav.menu ul.menu{
+			list-style:none;
+			float:right;
+		}
+		#cpwonline header.cabecera nav.menu ul.menu li{
+			display:inline-block;
+			margin-left:.2cm;
+		}
+		#cpwonline header.cabecera nav.menu ul.menu li a{
+			text-decoration:none;
+			font-size:12pt;
+			color:#444;
+			padding:10px 15px;
+			transition:all 0.3s ease;
+			-webkit-transition:all 0.3s ease;
+			-moz-transition:all 0.3s ease;
+			-ms-transition:all 0.3s ease;
+			-o-transition:all 0.3s ease;
+		}
+		#cpwonline header.cabecera nav.menu ul.menu li a#prin{
+			background:#00bdf0;
+			color:#fff;
+			background:#00bdf0;
+		}
+		#cpwonline header.cabecera nav.menu ul.menu li a#prin:hover,
+		#cpwonline header.cabecera nav.menu ul.menu li a:hover{
+			background:#33cc66;
+			color:#fff;
+		}
+		#cpwonline .cerrar_nav{
+			display:none;
+		}
+
+	/*BLOQUE:Contenedor---------------------------------------------------------*/
+		#cpwonline section.contenedor{
+			overflow:hidden;
+		}
+		/*SECCIÓN:art_1---------------------------------------------------------*/
+			#cpwonline article.art_1{
+				background:#00bdf0;
+				padding:2.5cm;
+				overflow:hidden;
+				text-align:center;
+				position: relative;
+			}
+			#cpwonline article.art_1 div.f_1{
+				background:#009bd0;
+				position:absolute;
+				left:0px;
+				bottom:0px;
+				width:100%;
+				height:4.4cm;
+				transition: 0.3s all;
+				-moz-transition: 0.3s all;
+				-webkit-transition: 0.3s all;
+			}
+			#cpwonline article.art_1 i.cuadro1{
+				background: url("../images/cuadro1.png")no-repeat;
+				height: 60px;
+				width:72px;
+				position: absolute;
+				left: 20%;
+				top: 15%;
+			}
+			#cpwonline article.art_1 i.cuadro2{
+				background: url("../images/cuadro2.png")no-repeat;
+				height: 60px;
+				width:72px;
+				position: absolute;
+				left: 50%;
+				top: 7%;
+			}
+			#cpwonline article.art_1 div.rota_1{
+				overflow:hidden;
+				position: relative;
+				width:100%;
+			}
+			#cpwonline article.art_1 img{
+				display:inline-block;
+				float:left;
+				position:absolute;
+				left:24%;
+				top: 15%;
+				width:170px;
+			}
+			#cpwonline article.art_1 div.text{
+				display:inline-block;
+				text-align: center;
+				float:right;
+				margin-right:15%;
+				overflow:hidden;
+				padding:.8cm;
+			}
+			#cpwonline article.art_1 div.text h3:nth-child(1) {
+				font-size:40pt;
+				color:#FFF;
+				cursor:pointer;
+				transition:0.5s all;
+				-webkit-transition:0.5s all;
+				-moz-transition:0.5s all;
+			}
+			#cpwonline article.art_1 div.text h3:nth-child(2) {
+				font-size:32pt;
+				color:#444;
+				margin-bottom: 1cm;
+			}
+
+		/*SECCIÓN:art_2---------------------------------------------------------*/
+			#cpwonline article.art_2{
+				background: #fff;
+				position:relative;
+				transition:0.3s all;
+				-webkit-transition:0.3s all;
+				-moz-transition:0.3s all;
+			}
+			#cpwonline article.art_2 h3:nth-child(1){
+				text-align:center;
+				font-size:12pt;
+				margin-top:.6cm;
+				background: #8d8d8d;
+				color: #fff;
+				padding: .4cm;
+			}
+			#cpwonline article.art_2 .list_pyp{
+				text-align: center;
+				padding:.4cm;
+				font-size:18pt;
+				position:relative;
+				/*! left: 20%; */
+			}
+			#cpwonline article.art_2 .list_pyp a{color:#444;}
+			#cpwonline article.art_2 .list_pyp li.pyp_1,
+			#cpwonline article.art_2 .list_pyp li.pyp_2,
+			#cpwonline article.art_2 .list_pyp li.pyp_3,
+			#cpwonline article.art_2 .list_pyp li.pyp_4{
+				width:30%;
+				position:relative;
+				height: 10cm;
+				padding:.2cm;
+				display:inline-block;
+				border:2px solid #ccc;
+				overflow:hidden;
+				text-align: center;
+				-webkit-transition:.4s all;
+				-moz-transition:.4s all;
+				transition:.4s all;
+				cursor:pointer;
+				background:#FFF;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_1:hover,
+			#cpwonline article.art_2 .list_pyp li.pyp_2:hover,
+			#cpwonline article.art_2 .list_pyp li.pyp_3:hover,
+			#cpwonline article.art_2 .list_pyp li.pyp_4:hover{
+				-webkit-transform: scale(1.1);
+				-moz-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+				border:2px solid #06c;
+				z-index:1000;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:nth-child(1) ~ div,
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:nth-child(1) ~ div,
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:nth-child(1) ~ div,
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:nth-child(1) ~ div{
+				border-top: 1px solid #ccc;
+				padding:.2cm;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:last-child{
+				padding:.5cm;
+				font-weight: bold;
+				color:#fff;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:last-child{
+				background: #3c6;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:last-child{
+				background: #06f;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:last-child{
+				background: #909;
+			}
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:nth-child(1),
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:last-child{
+				background: #ffcc00;
+			}
+			
+			#cpwonline article.art_2 .list_pyp li.pyp_1 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_2 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_3 div:last-child,
+			#cpwonline article.art_2 .list_pyp li.pyp_4 div:last-child{
+				position:absolute;
+				bottom:.1cm;
+				width:90%;
+			}
+			#cpwonline article.art_2 div.verEn{
+				position:relative;
+				bottom:0px;
+				left:0px;
+				text-align: center;
+				background: #8d8d8d;
+				padding:.2cm;
+				width: 100%;
+			}
+			#cpwonline article.art_2 div.verEn span{
+				color:#FFF;
+				font-size:14pt;
+			}
+			#cpwonline article.art_2 div.verEn select{
+				padding:7px 15px;
+				font-size:14pt;
+				background: hsla(0, 0%, 70%, 0.5);
+				border:1px solid hsla(0, 0%, 50%, 0.5);
+				color:#444;
+			}
+			#cpwonline div.vist_plan div{
+				margin-bottom:.2cm;
+				color:#444;
+				border-bottom:1px solid #ccc;
+				font-size:14pt;
+			}
+			#cpwonline div.vist_plan div.den h6{
+				color:#06c;
+				font-size:14pt;
+				display:inline-block;
+			}
+		/*SECCIÓN:art_3---------------------------------------------------------*/
+			#cpwonline article.art_3 {
+				background:#06f;
+				overflow:hidden;
+				padding-top:2cm;
+				padding-bottom:1.2cm;
+			}
+			#cpwonline article.art_3 div.col_1,
+			#cpwonline article.art_3 div.col_2,
+			#cpwonline article.art_3 div.col_3{
+				width:26%;
+				display:inline-block;
+				padding:.9cm;
+				text-align: center;
+				float:left;
+			}
+			#cpwonline article.art_3 div.col_2{
+				border-left: 1px solid #FFF;
+				border-right: 1px solid #FFF;
+			}
+			#cpwonline article.art_3 div.col_1 h5,
+			#cpwonline article.art_3 div.col_2 h5,
+			#cpwonline article.art_3 div.col_3 h5{
+				font-size:20pt;
+				color:#FFF;
+				margin-bottom:.6cm;
+			}
+
+			#cpwonline article.art_3 div.col_1 p,
+			#cpwonline article.art_3 div.col_2 p,
+			#cpwonline article.art_3 div.col_3 p{
+				font-size:12pt;
+				color:#FFF;
+				line-height: .8cm;
+				text-align: justify;
+			}
+		/*SECCIÓN:art_4---------------------------------------------------------*/
+			#cpwonline article.art_4{
+				padding:1cm;
+			}
+			#cpwonline article.art_4 div.text{
+				border-top:1px solid hsla(220, 50%, 50%, 0.7);
+				border-bottom:1px solid hsla(220, 50%, 50%, 0.7);
+				padding:.4cm;
+				text-align: center;
+			}
+			#cpwonline article.art_4 div.text h4{
+				font-size:20pt;
+				margin: .3cm 1cm .5cm 0;
+				display: inline-block;
+				float:none;
+			}
+			#cpwonline article.art_4 div.text h4 a{
+				font-size:12pt;
+			}
+		/*SECCIÓN:art_5---------------------------------------------------------*/
+			#cpwonline article.art_5{
+				background: #3c6;
+				overflow: hidden;
+				padding:0cm;
+			}
+			#cpwonline article.art_5 h3:nth-child(1){
+				text-align:center;
+				font-size:20pt;
+				margin-top:.4cm;
+				color: #fff;
+				background:hsla(0, 0%, 80%, .2);
+				padding:.4cm;
+			}
+			#cpwonline article.art_5 div.col_1,
+			#cpwonline article.art_5 div.col_2,
+			#cpwonline article.art_5 div.col_3{
+				width:30%;
+				height:11cm;
+				display: inline-block;
+				float:left;
+				overflow:hidden;
+				text-align: center;
+				padding: .4cm;
+				position:relative;
+			}
+			#cpwonline article.art_5 div.col_2{
+				border-left:1px solid hsla(0,0%,80%,0.3);
+				border-right:1px solid hsla(0,0%,80%,0.3);
+			}
+			#cpwonline article.art_5 div.col_1 img,
+			#cpwonline article.art_5 div.col_2 img,
+			#cpwonline article.art_5 div.col_3 img{
+				width:1.7cm;
+				height:2.7cm;
+				border-top:.2cm;
+				border-bottom:.2cm;
+			}
+			#cpwonline article.art_5 div.col_1 h5,
+			#cpwonline article.art_5 div.col_2 h5,
+			#cpwonline article.art_5 div.col_3 h5{
+				font-size:18pt;
+				color: #000;
+				border-bottom:.3cm;
+			}
+			#cpwonline article.art_5 div.col_1 p,
+			#cpwonline article.art_5 div.col_2 p,
+			#cpwonline article.art_5 div.col_3 p{
+				font-size:12pt;
+				line-height: 1cm;
+				color:#fff;
+				text-align: justify;
+			}
+			#cpwonline article.art_5 div.col_1 a,
+			#cpwonline article.art_5 div.col_2 a,
+			#cpwonline article.art_5 div.col_3 a{
+				position:absolute;
+				bottom:0;
+				left:0;
+				width:90%;
+			}
+		
+	/*BLOQUE: Footer---------------------------------------------*/
+		#cpwonline footer.pie{
+			padding:.4cm;
+			background:#444;
+			color:#fff;
+			clear:both;
+		}
+		#cpwonline footer.pie .cab_footer{
+			overflow:hidden;
+			position:relative;
+		}
+		#cpwonline footer.pie .cab_footer div.logo{
+			display:inline-block;
+			width:7cm;
+			float:right;
+			margin:.7cm 2cm 0 0;
+			overflow:hidden;
+		}
+		#cpwonline footer.pie .cab_footer div.logo img{
+			width:7cm;
+		}
+		#cpwonline footer.pie .cab_footer img.nav_icon{
+			display:none;
+		}
+		#cpwonline footer.pie .cab_footer nav.menu{
+			width:30%;
+			display:inline-block;
+			float:left;
+			padding:.3cm;
+		}
+		#cpwonline footer.pie .cab_footer nav.menu ul.menu{
+			list-style:none;
+		}
+		#cpwonline footer.pie .cab_footer nav.menu ul.menu li{
+			display:block;
+			color:#FFF;
+			margin-bottom:.1cm;
+			margin-left:1cm;
+		}
+		#cpwonline footer.pie .cab_footer nav.menu ul.menu li a{
+			text-decoration:none;
+			color:#fff;
+			font-size:14pt;
+			transition:.3s all;
+			-webkit-transition:.3s all;
+			-moz-transition:.3s all;
+			-o-transition:.3s all;
+		}
+		#cpwonline footer.pie .cab_footer nav.menu ul.menu li a:hover{
+			color:#00bdf0;
+			text-decoration:underline;
+		}
+		#cpwonline footer.pie .copy{
+			text-align: center;
+			padding:.3cm;
+			color:#aaa;
+		}
+		
+/*PÁGINA:MODELOS---------------------------------------------------------*/
+	#cpwonline article.art_6{
+		overflow: :hidden;
+		background: #ccc;
+		padding:.1cm;
+		text-align:center;
+	}
+	#cpwonline article.art_6 h3{
+		padding:10px 15px;
+		display:block;
+		background: #444;
+		color: #fff;
+	}
+	#cpwonline article.art_6 div.cont_mod{
+		margin-top:.1cm;
+		overflow:hidden;
+		background:#ccc;
+	}
+	#cpwonline article.art_6 div.cont_mod div.mod_1{
+		display:inline-block;
+		background: #FFF;
+		padding-bottom:.5cm;
+		margin-top:.2cm;
+		text-align:center;
+		width:45%;
+		float:none;
+	}
+	#cpwonline article.art_6 div.cont_mod div.mod_1 img{
+		width:70%;
+		display:inline-block;
+		float:none;
+		margin-bottom: .2cm;
+	}
+	#cpwonline article.art_6 div.cont_mod div.mod_1 a{
+		float:left;
+	}
+
+/*PÁGINA:CONTACTO---------------------------------------------------------*/
+	#cpwonline article.art_7_0{
+		padding:.5cm;
+		background:#777;
+		display:block;
+	}
+	#cpwonline article.art_7_0 p{
+		font-size:12pt;
+		color:#fff;
+	}
+	#cpwonline article.art_7{
+		background:#2dc2c2;
+		padding:2cm;
+		overflow:hidden;
+		text-align:left;
+		position: relative;
+	}
+	#cpwonline article.art_7 div.f_1{
+		background:#47968b;
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		width:100%;
+		height:7cm;
+	}
+	#cpwonline article.art_7 img[src="../images/img_art_1_3.png"]{
+		position:absolute;
+		bottom:30%;
+		left:10%;
+		width:4cm;
+		z-index:1000;
+	}
+	#cpwonline div.contacto_1{
+		overflow: hidden;
+		position: relative;
+		padding: .2cm;
+		display:inline-block;
+		float:left;
+	}
+	#cpwonline div.contacto_1 h3:nth-child(1){
+		font-size:38pt;
+		color:#06f;
+	}
+	#cpwonline div.contacto_1 h3:nth-child(2){
+		font-size:32pt;
+		color:#444;
+		margin-left:1cm;
+	}
+	#cpwonline div.contacto_1 h3:nth-child(3){
+		font-size:36pt;
+		color:#FFF;
+		margin-left:1.5cm;
+	}
+	#cpwonline div.contacto_2{
+		position:relative;
+		height:16cm;
+		margin-left:0cm;
+		top:0px;
+		display:inline-block;
+		overflow:hidden;
+		width:50%;
+		padding:.1cm;
+	}
+	#cpwonline div.contacto_2 div[tag="form_gen"]{
+		width:285px;
+		background:url('../images/contacto_tel.png')no-repeat;
+		padding: 1.6cm 1cm 1cm .45cm;
+		margin-left:1cm;
+	}
+	#cpwonline div.contacto_2 div.dentro{
+		overflow: auto;
+		height:10.3cm;
+		margin-bottom: 1.2cm;
+	}
+	#cpwonline div.contacto_2 div.dentro section.pregunta{
+		padding: .5cm;
+		background:#DDD;
+		color:#444;
+		margin-bottom:.5cm;
+		text-align:center;
+	}
+	#cpwonline div.contacto_2 div.dentro section.pregunta p{
+		display:block;
+		margin-bottom:.3cm;
+	}
+	#cpwonline div.contacto_2 div.dentro section.pregunta a{
+		font-size:10pt;
+	}
+	#cpwonline div.contacto_2 div.dentro section.ordenar,
+	#cpwonline div.contacto_2 div.dentro section.contactar{
+		display:none;
+	}
+	#cpwonline div.contacto_2 input{
+		padding:10px 15px;
+		display:block;
+		width:85%;
+		margin-bottom:.1cm;
+		color:#444;
+		background: hsla(0, 0%, 80%, 0.7);
+		border:none;
+		font-size:14pt;
+	}
+	#cpwonline div.contacto_2 select{
+		padding:10px 15px;
+		display:block;
+		width:92.3%;
+		margin-bottom:.1cm;
+		color:#444;
+		background: hsla(0, 0%, 80%, 0.7);
+		border:none;
+		font-size:14pt;
+	}
+	#cpwonline div.contacto_2 textarea{
+		padding:10px 15px;
+		display:inline-block;
+		width:85%;
+		margin-bottom:.3cm;
+		color:#444;
+		background: hsla(0, 0%, 80%, 0.7);
+		border:none;
+		font-size:12pt;
+		float:none;
+		height:300px;
+		min-width:85%;
+		min-height:300px;
+		max-height:300px;
+		max-width:85%;
+	}
+	#cpwonline div.contacto_2 div[tag="form_gen"] h6{
+		font-size:12pt;
+		color:#06f;
+		margin:.2cm 0 .2cm .2cm;
+	}
+	#cpwonline div.m_exito{
+		padding:.4cm;
+		font-size:14pt;
+		color:#fff;
+		background:#09c;
+		display:block;
+		margin:.2cm 0 .2cm .2cm;
+	}
+	
+/*PÁGINA:Información---------------------------------------------------------*/
+	#cpwonline article.art_8{
+		overflow:hidden;
+	}
+	#cpwonline article.art_8 div.col_1{
+		background: #09c;
+		padding:1cm;
+		overflow:hidden;
+	}
+	#cpwonline article.art_8 div.col_1_izq{
+		display:inline-block;
+		float:left;
+		width:46%;
+	}
+	#cpwonline article.art_8 div.col_1:nth-child(1) div.col_1_izq{
+		margin-top:2cm;
+	}
+	/*Bloque: Desarrolladores----------------------------------------*/
+		#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline{
+			display:block;
+			overflow:hidden;
+			text-align:center;
+		}
+		#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline article.art_fund{
+			width:20%;
+			display:inline-block;
+			float:none;
+			text-align:center;
+			padding:.2cm;
+			background:#FFF;
+			margin:0 .2cm .2cm 0;
+		}
+		#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline article.art_fund img{
+			width:90%;
+			border-radius:10cm;
+			-moz-border-radius:10cm;
+			-webkit-border-radius:10cm;
+		}
+		#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline article.art_fund h3{
+			color:#444;
+			font-size:14pt;
+			margin: .2cm 0 .3cm 0;
+		}
+		#cpwonline article.art_8 div.col_1_izq section.equipo_cpwonline article.art_fund p{
+			line-height:.8cm;
+			color:#555;
+			font-size:12pt;
+		}
+		
+		
+	#cpwonline article.art_8 div.col_1_izq h4{
+		font-size:16pt;
+		color:#fff;
+		margin-bottom:.2cm;
+	}
+	#cpwonline article.art_8 div.col_1_izq p{
+		color:#fff;
+		font-size:12pt;
+		line-height: .9cm;
+		text-align: justify;
+	}
+	#cpwonline article.art_8 div.col_1_der{
+		display:inline-block;
+		float:left;
+		width:48%;
+		text-align: center;
+	}
+	#cpwonline article.art_8 div.col_1_der img:nth-child(1){
+		width:10cm;
+		margin-top:.5cm;
+	}
+	#cpwonline article.art_8 div.col_1 img.exc{
+		width:6cm;
+		margin-bottom:1cm;
+		margin-top:.4cm;
+	}
+	#cpwonline article.art_8 div.col_1_der a{
+		font-size:14pt;
+	}
+/*PÁGINA:Perfil---------------------------------------------------------*/
+	#cpwonline article.art_9{
+		background:#fff;
+		overflow:hidden;
+		padding:.5cm;
+		text-align:center;
+	}
+	#cpwonline article.art_9 section.login{
+		width:70%;
+		float:none;
+		display:inline-block;
+		padding:2cm;
+		background:#fff;
+		overflow:hidden;
+	}
+	#cpwonline article.art_9 section.login h4{
+		font-size:18pt;
+		color:#00bdf0;
+		margin-bottom:.2cm;
+	}
+	#cpwonline article.art_9 section.login h5{
+		font-size:14pt;
+		color:#777;
+		margin-bottom:2.5cm;
+	}
+	#cpwonline article.art_9 section.login div.cont_input{
+		margin-bottom:1cm;
+	}
+	#cpwonline article.art_9 section.login div.cont_input input{
+		padding:10px 15px;
+		border:none;
+		background:none;
+		color:#00bdf0;
+		border:1px solid #fff;
+		border-bottom:1px solid #00bdf0;
+		font-size:12pt;
+		display:inline-block;
+		transition: .2s ease-in;
+		-webkit-transition: .2s ease-in;
+		-moz-transition: .2s ease-in;
+		-o-transition: .2s ease-in;
+	}
+	#cpwonline article.art_9 section.login div.cont_input input:hover{
+		border:1px solid #00bdf0;
+	}
+	#cpwonline article.art_9 section.perfil{
+		overflow:hidden;
+		background:#777;
+	}
+	#cpwonline article.art_9 section.perfil ul.arriba{
+		display:block;
+		padding:0cm;
+		background:#444;
+		list-style:none;
+		overflow:hidden;
+	}
+	#cpwonline article.art_9 section.perfil ul.arriba li{
+		padding:.5cm;
+		display:inline-block;
+		float:left;
+		margin:0;
+		color:#fff;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-ms-user-select:none;
+	}
+	#cpwonline article.art_9 section.perfil ul.arriba li[tag="1"]{background:#009bd0;border-bottom:2px solid #009bd0;}
+	#cpwonline article.art_9 section.perfil ul.arriba li[tag="2"]{background:#00ace0;border-bottom:2px solid #00ace0;}
+	#cpwonline article.art_9 section.perfil ul.arriba li[tag="3"]{background:#00bdf0;border-bottom:2px solid #00bdf0;}
+	#cpwonline article.art_9 section.perfil ul.arriba li[tag="4"]{background:#11cef1;border-bottom:2px solid #11cef1;}
+	#cpwonline article.art_9 section.perfil ul.arriba li[tag="5"]{background:#22dff2;border-bottom:2px solid #22dff2;}
+	#cpwonline article.art_9 section.perfil ul.arriba li:hover{
+		background:#fff;
+		color:#00bdf0;
+		cursor:pointer;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo{
+		padding:.5cm .2cm .5cm .2cm;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article{
+		display:none;
+		overflow:hidden;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article p.list_datos{
+		font-size:12pt;
+		color:#DDD;
+		margin-bottom:.1cm;
+		display:block;
+		text-align:left;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article p.list_datos strong{
+		color:#fff;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article p.list_datos_tit{
+		padding:.2cm;
+		background:#fff;
+		color:#444;
+		font-size:14pt;
+		text-align:center;
+		display:block;
+		margin: .2cm 0 .2cm 0;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article p.list_datos.not{
+		color:#444;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article article.bloque{
+		width:50%;
+		float:left;
+		display:inline-block;
+		background:#FFF;
+		margin:0 .2cm .2cm 0;
+		text-align:center;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article article.bloque.b1{
+		width:48%;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article article.bloque.b2{
+		width:99%;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article article.bloque h4:nth-child(1){
+		display:block;
+		background:#009bd0;
+		padding:.3cm;
+		color:#fff;
+		text-align:left;
+		overflow:hidden;
+		font-size:16pt;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article  article.bloque h4:nth-child(1) i{
+		float:right;
+	}
+	#cpwonline article.art_9 section.perfil section.abajo article article.bloque input[name="pa_imagen"]{
+		display:none;
+	}
+
+
+
+
+

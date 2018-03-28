@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /images/
+Disallow: /modelos/mod/
+Disallow: /perfil/
+Sitemap: https://www.cpwonline.com.ve/sitemap.xml
+User-Agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
