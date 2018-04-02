@@ -1,17 +1,40 @@
 //Auto ajuste del plan y modelo por GET
 	function escoge_modelo(modelo){
-		var select = '<select name="o_modelo">';
-		var opt1 = '<option value="A17-1">A17-1</option>';
-		var opt2 = '<option value="A17-2">A17-2</option>';
-		var opt3 = '<option value="A17-3">A17-3</option>';
-		var opt4 = '<option value="A17-4">A17-4</option>';
-		var opt5 = '<option value="A17-5">A17-5</option>';
-		var opt6 = '<option value="A18-1">A18-1</option>';
-		var opt7 = '<option value="A18-2">A18-2</option>';
-		var fin = '</select>';
-		while()
+		/*	PRUEBA DE ELEGIR EL MODELO CON EXPRESIONES REGULARES Y FUNCIONES COMPLEJAS
+			alert(modelo);
+			modelos = new Array('A17-1','A17-2','A17-3','A17-4','A17-5','A18-1','A18-2');
+			var mod = modelos[modelo-1];
+			alert("este es mod: "+mod);
+			var reemplazo_linea = linea.replace(/modelo/g , " selected>"+mod);
+			return reemplazo_linea;
+			var linea = '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+		*/
+		switch(modelo){
+			case 1:
+				return '<select name="o_modelo"><option value="A17-1" selected>A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 2:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2" selected>A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 3:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3" selected>A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 4:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4" selected>A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 5:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5" selected>A17-5</option><option value="A18-1">A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 6:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1" selected>A18-1</option><option value="A18-2">A18-2</option></select>';
+			break;
+			case 7:
+				return '<select name="o_modelo"><option value="A17-1">A17-1</option><option value="A17-2">A17-2</option><option value="A17-3">A17-3</option><option value="A17-4">A17-4</option><option value="A17-5">A17-5</option><option value="A18-1">A18-1</option><option value="A18-2" selected>A18-2</option></select>';
+			break;
+		}
 	}
 	function seleccionar(plan, modelo){
+		alert("prim: "+plan+" y "+modelo);
 		var dir="";
 		if(plan=="Deluxe"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
