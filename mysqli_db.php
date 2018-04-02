@@ -1,5 +1,5 @@
 <?php
-	$dat = 0;
+	$dat = 1;
 	if($dat){
 		/*Conexión a la base de datos de CPW Online*/
 			$mysqli = new mysqli('142.44.139.35', 'cpwonlin_general', 'Juniorydamaglys2', 'cpwonlin_general');
