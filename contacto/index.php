@@ -160,7 +160,7 @@
 								$plan = "Economic";
 							else
 								$plan = $_GET['plan'];
-							if(empty($_GET['modelo']))
+							if(empty($_GET['modelo']) || $_GET['modelo']<0 || $_GET['modelo']>7)
 								$modelo = 1;
 							else
 								$modelo = $_GET['modelo'];
