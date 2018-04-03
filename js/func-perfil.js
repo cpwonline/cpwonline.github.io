@@ -232,7 +232,7 @@ $(document).ready(function(){
 					$('#cpwonline div.espera').html('Espere | <span>CPW Online</span>');
 				//Recolección de datos
 					var pa_id = $(this).attr('tag');
-					var pa_imagen = $("#cpwonline section.perfil i."+pa_id).attr('tag');
+					var pa_imagen = $("#cpwonline section.perfil i#"+pa_id).attr('tag');
 					var tipo = "pago";
 				//Llamada AJAX
 					$.post("../enlaces/eliminar.php", {pa_id:pa_id, tipo:tipo, pa_imagen:pa_imagen},function(r){

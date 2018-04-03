@@ -36,6 +36,9 @@
 	}
 	function seleccionar(plan, modelo){
 		var dir="";
+		if(plan=="Economic"){
+			dir = '<select name="o_plan"><option value="Economic" selected>Economic</option><option value="Deluxe">Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
+		}
 		if(plan=="Deluxe"){
 			dir = '<select name="o_plan"><option value="Economic">Economic</option><option value="Deluxe" selected>Deluxe</option><option value="Ultimate">Ultimate</option><option value="Super-Economic">Super-Economic</option></select>';
 		}
