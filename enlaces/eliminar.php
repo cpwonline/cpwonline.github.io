@@ -7,7 +7,7 @@
 		case 'pago':
 			$pa_id = $_POST['pa_id'];
 			$pa_imagen = $_POST['pa_imagen'];
-			$con = $mysqli->query("DELETE FROM pagos WHERE pa_id = '".$pa_id."' AND pa_usuario = '".$_SESSION['o_usuario']."' ");
+			$con = $mysqli->query("DELETE FROM pagos WHERE pa_id = '".$pa_id."' ");
 			if($con){
 				echo 'El pago fue borrado con &eacute;xito, actualice la secci&oacute;n <i>Mis Pagos</i> para ver sus pagos.';
 				if(!empty($pa_imagen)) unlink($pa_imagen);
