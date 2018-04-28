@@ -77,6 +77,9 @@
 									<div class="cam">Plan:</div>
 									<div class="cam">Estado de p&aacute;gina:</div>
 									<div class="cam">Estado de cuenta:</div>
+									<div class="cam">&Uacute;ltimo ciclo pago</div>
+									<div class="cam">D&iacute;as sin pagar</div>
+									<div class="cam">Fase</div>
 									<div class="cam">Registro:</div>
 								</div>
 				<?php
@@ -93,12 +96,15 @@
 										$do_plan = $ro['do_plan'];
 										$do_estado_pagina = $ro['do_estado_pagina'];
 										$do_estado_cuenta = $ro['do_estado_cuenta'];
+										$do_fase = $ro['do_fase'];
+										$dias_sin_pagar = "N/A";
 										//Verificación que el mes pagado sea este mes
 											$res = verificacion_ciclo($do_ciclo, $do_mes);
 											
 										if($res){
 											$con1 = $mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'No pagado' WHERE do_id = '".$do_id."'");
 												$do_estado_cuenta = "<strong color='red'>No pagado</strong>";
+												$dias_sin_pagar = date('d')-$do_ciclo;
 										}else
 												$do_estado_cuenta = "<span color='green'>Pagado</span>";
 											
@@ -116,6 +122,9 @@
 											<div class="cam"><?=$do_plan?></div>
 											<div class="cam"><?=$do_estado_pagina?></div>
 											<div class="cam"><?=$do_estado_cuenta?></div>
+											<div class="cam"><?=$do_ciclo?>/<?=$do_mes?></div>
+											<div class="cam"><?=$dias_sin_pagar?></div>
+											<div class="cam"><?=$do_fase?></div>
 											<div class="cam"><?=$do_freg?></div>
 											<div class="cam"><a class="btn-gen eliminar_do" tag="<?=$do_id?>">Eliminar</a></div>
 										</div>

@@ -57,6 +57,7 @@ $(document).ready(function(){
 					var o_dominio_1 = $("#cpwonline input[name='o_dominio_1']").val();
 					var o_dominio_2 = $("#cpwonline input[name='o_dominio_2']").val();
 					var o_dominio_3 = $("#cpwonline input[name='o_dominio_3']").val();
+					var o_nya = $("#cpwonline input[name='o_nya']").val();
 					var o_cedula = $("#cpwonline input[name='o_cedula']").val();
 					var o_pais = $("#cpwonline input[name='o_pais']").val();
 					var o_estado = $("#cpwonline input[name='o_estado']").val();
@@ -78,7 +79,7 @@ $(document).ready(function(){
 						var retrasar = setTimeout(mov, 3000);
 					}else{
 						//Función
-							if(o_titulo == "" || o_dominio_1 == "" || o_dominio_2 == "" || o_dominio_3 == "" || o_cedula == "" || o_pais == "" || o_estado == "" || o_ciudad == "" || o_direccion == "" || o_email == "" || o_tel == "" || o_contenidos == ""){
+							if(o_nya == "" || o_titulo == "" || o_dominio_1 == "" || o_dominio_2 == "" || o_dominio_3 == "" || o_cedula == "" || o_pais == "" || o_estado == "" || o_ciudad == "" || o_direccion == "" || o_email == "" || o_tel == "" || o_contenidos == ""){
 								$('#cpwonline div.espera').html('Disculpe, hay campos que est&aacute;n vac&iacute;os');
 								var retrasar = setTimeout(mov, 3000);
 							}else{
