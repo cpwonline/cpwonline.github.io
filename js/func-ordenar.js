@@ -84,7 +84,7 @@ $(document).ready(function(){
 								var retrasar = setTimeout(mov, 3000);
 							}else{
 								//Llamada AJAX
-									$.post("../enlaces/ordenar_contactar.php", {o_titulo:o_titulo, o_dominio_1:o_dominio_1, o_dominio_2:o_dominio_2, o_dominio_3:o_dominio_3, o_cedula:o_cedula, o_pais:o_pais, o_estado:o_estado, o_ciudad:o_ciudad, o_direccion:o_direccion, o_email:o_email, o_tel:o_tel, o_plan:o_plan, o_modelo:o_modelo, o_contenidos:o_contenidos, o_moneda:o_moneda, o_precio:o_precio, tipo:tipo},function(r){
+									$.post("../enlaces/ordenar_contactar.php", {o_nya:o_nya, o_titulo:o_titulo, o_dominio_1:o_dominio_1, o_dominio_2:o_dominio_2, o_dominio_3:o_dominio_3, o_cedula:o_cedula, o_pais:o_pais, o_estado:o_estado, o_ciudad:o_ciudad, o_direccion:o_direccion, o_email:o_email, o_tel:o_tel, o_plan:o_plan, o_modelo:o_modelo, o_contenidos:o_contenidos, o_moneda:o_moneda, o_precio:o_precio, tipo:tipo},function(r){
 										$('#cpwonline div.espera').html(r);
 										var retrasar = setTimeout(mov, 3000);
 									});

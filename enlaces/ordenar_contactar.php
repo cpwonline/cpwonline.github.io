@@ -24,9 +24,9 @@
 				$o_moneda = $_POST['o_moneda'];
 				$o_precio = $_POST['o_precio'];
 				//Verificación de la cédula
-					$con = $mysqli->query("SELECT o_cedula FROM ordenes WHERE o_cedula = '".$o_cedula."'");
+					$con1 = $mysqli->query("SELECT o_cedula FROM ordenes WHERE o_cedula = '".$o_cedula."'");
 					$con = $mysqli->query("SELECT o_email FROM ordenes WHERE o_email = '".$o_email."'");
-					if($con->num_rows!=0){
+					if($con1->num_rows!=0){
 						echo '<div class="m_error" style="display:block;">Disculpe, este DNI, Nro. de c&eacute;dula o pasaporte ya est&aacute; registrado.</div>';
 					}elseif($con->num_rows!=0){
 						echo '<div class="m_error" style="display:block;">Disculpe, este correo ya est&aacute; registrado.</div>';
@@ -77,7 +77,7 @@
 												<div class="prin">Correo: <strong>'.$o_email.'</strong></div>
 												<div class="prin">Tel&eacute;fono: <strong>'.$o_tel.'</strong></div>
 												<div class="prin">Plan: <strong>'.$o_plan.'</strong></div>
-												<div class="prin">Modelos: <strong>'.$o_modelos.'</strong></div>
+												<div class="prin">Modelo: <strong>'.$o_modelo.'</strong></div>
 												<div class="prin">Contenidos: <strong>'.$o_contenidos.'</strong></div>
 												<div class="prin">Moneda: <strong>'.$o_moneda.'</strong></div>
 												<div class="prin">Total a pagar: <strong>'.$o_precio.'</strong></div>

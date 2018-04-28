@@ -32,7 +32,7 @@
 						$o_precio = $ro['o_precio'];
 						$o_usuario = $ro['o_usuario'];
 						$o_clave = $ro['o_clave'];
-						$o_listo = $ro['o_listo'];if($o_listo==0) $o_listo = "En proceso";
+						$o_listo = $ro['o_listo'];
 						$o_admin = $ro['o_admin'];
 						$o_estado_cuenta = $ro['o_estado_cuenta'];
 						$o_estado_pagina = $ro['o_estado_pagina'];
@@ -97,7 +97,7 @@
 						echo '<p class="list_datos">Estado del pedido de la p&aacute;gina: <strong>En proceso</strong></p>';
 					}
 				?>
-				<p class="list_datos not">Le recordamos que el <i>"Estado de p&aacute;gina"</i> tiene dos opciones: "De prueba" y "Oficial", antes de pasar al estado "Oficial" recuerde que debe esperar a que su <i>"Estado del pedido de p&aacute;gina"</i> est&eacute; "Activo" a menos que desee pasar al modo "Oficial". En ese momento, se le enviar&aacute; los datos de acceso de su p&aacute;gina y usted podr&aacute; visualizarla, luego deber&aacute; decidir si pasar al estado "Oficial". Cuando se pasa al estado "Oficial" se debe realizar el correspondiente pago, mientras se est&eacute; en el estado "De prueba" no debe realizarse ning&uacute;n pago.</p>
+				<p class="list_datos not">Le recordamos que el <i>"Estado de p&aacute;gina"</i> tiene dos opciones: "De prueba" y "Oficial", antes de pasar al estado "Oficial" recuerde que debe esperar a que su <i>"Estado del pedido de p&aacute;gina"</i> est&eacute; "Listo" a menos que desee pasar al modo "Oficial". En ese momento, se le enviar&aacute; los datos de acceso de su p&aacute;gina y usted podr&aacute; visualizarla, luego deber&aacute; decidir si pasar al estado "Oficial". Cuando se pasa al estado "Oficial" se debe realizar el correspondiente pago, mientras se est&eacute; en el estado "De prueba" no debe realizarse ning&uacute;n pago.</p>
 			</article>
 		<!--Pagos-->
 			<article tag="3">
