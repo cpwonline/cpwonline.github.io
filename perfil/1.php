@@ -117,8 +117,8 @@
 											echo '<div class="fil">';
 										}
 				?>
-											<div class="cam"><?=$do_usuario?></div>
-											<div class="cam"><?=$do_dominio?></div>
+											<div class="cam es"><p><?=$do_usuario?></p></div>
+											<div class="cam es"><p class="es_div"><?=$do_dominio?></p></div>
 											<div class="cam"><?=$do_plan?></div>
 											<div class="cam"><?=$do_estado_pagina?></div>
 											<div class="cam"><?=$do_estado_cuenta?></div>
@@ -127,6 +127,7 @@
 											<div class="cam"><?=$do_fase?></div>
 											<div class="cam"><?=$do_freg?></div>
 											<div class="cam"><a class="btn-gen eliminar_do" tag="<?=$do_id?>">Eliminar</a></div>
+											<div class="cam"><a class="btn-gen pagado_do" tag="<?=$do_id?>">Pagar</a></div>
 										</div>
 				<?php
 									}

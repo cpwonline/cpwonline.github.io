@@ -104,6 +104,10 @@
 				border-spacing: 3px;
 				font-weight:bold;
 			}
+			#cpwonline div.tabla_gen  div.cam.es p{
+				max-width:2cm;
+				overflow:auto;
+			}
 			#cpwonline div.tabla_gen  div.cam{
 				display:table-cell;
 			}

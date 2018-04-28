@@ -73,10 +73,12 @@
 					<div class="cam"><?=$pa_freg?></div>
 			<?php
 					if(empty($pa_imagen)){
-						echo '<div class="cam" tag="'.$pa_id.'">
-								<input type="file" name="pa_imagen" tag="pa_imagen_'.$pa_id.'"/>
-								<a class="btn-gen subir_imagen_pago"  tag="'.$pa_id.'">Subir</a>
-							</div>';
+			?>
+						<div class="cam" tag="<?=$pa_id?>">
+								<input type="file" name="pa_imagen" tag="pa_imagen_<?=$pa_id?>"/>
+								<a class="btn-gen subir_imagen_pago"  tag="<?=$pa_id?>">Subir</a>
+							</div>
+			<?php
 					}else{
 						echo '<div class="cam">S&iacute;</div>';
 					}

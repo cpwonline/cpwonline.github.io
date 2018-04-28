@@ -102,7 +102,7 @@
 
 					// Cabeceras adicionales
 					$cabeceras .= 'To: CPW Online <grupocpwonline@gmail.com>' . "\r\n";
-					$cabeceras .= 'To: '.$c_nya.' <'.$c_email.'>' . "\r\n";
+					$cabeceras .= 'To: Usted <'.$do_usuario.'>' . "\r\n";
 
 					// Enviarlo
 					mail($para, $titulo, $mensaje, $cabeceras);
