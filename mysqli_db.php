@@ -6,11 +6,11 @@
 			if($mysqli->connect_errno){
 				echo "\n Fallo al conectar a la base de datos.\n";
 				echo "\n".$mysqli->connect_errno."\n";
-				exit;
+				exit; 
 			}
 	}else{
 		/*Conexión a la base de datos local*/
-			$mysqli = new mysqli('localhost', 'cpwonline', 'cpwonline', 'general_cpwonline');
+			$mysqli = new mysqli('localhost', 'josefelixrc', '26552160', 'web_cpwonline');
 			if($mysqli->connect_errno){
 				echo "\n Fallo al conectar a la base de datos.\n";
 				echo "\n".$mysqli->connect_errno."\n";
@@ -55,7 +55,7 @@
 		return $mes[$num];
 	}
 	function make_safe($v) {
-		$v = addslashes(trim($v))
+		$v = addslashes(trim($v));
 		return $v;
 	} 
 ?>

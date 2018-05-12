@@ -210,5 +210,20 @@
 			}else
 				echo 'Ha ocurrido un error al cambiar la fase.';
 		break;
+		case 'modifica_precio':
+			$p_id = $_POST['p_id'];
+			$p_plan = $_POST['p_plan'];
+			$p_moneda = $_POST['p_moneda'];
+			$p_valor = $_POST['p_valor'];
+			if(empty($p_plan) || empty($p_moneda) || empty($p_valor)){
+				echo 'Disculpe, hay campos que no deben estar vac&iacute;os.';
+				exit;
+			}
+			$con = $mysqli->query("UPDATE precios SET p_plan = '".$p_plan."', p_moneda = '".$p_moneda."', p_valor = '".$p_valor."', p_freg = NOW() WHERE p_id = '".$p_id."' ");
+			if($con)
+				echo 'Datos de los precios actualizados.';
+			else
+				echo 'Ha ocurrido un error al actualizar el precio';
+		break;
 	}
 ?>

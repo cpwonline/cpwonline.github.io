@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-07-2018 a las 07:09:29
+-- Tiempo de generación: 06-05-2011 a las 06:21:24
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -50,7 +50,7 @@ CREATE TABLE `datos_oficiales` (
 CREATE TABLE `informaciones_u` (
   `iu_id` int(10) NOT NULL,
   `iu_titulo` varchar(50) NOT NULL,
-  `iu_contenido` varchar(200) NOT NULL,
+  `iu_contenido` text NOT NULL,
   `iu_freg` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -112,6 +112,13 @@ CREATE TABLE `pagos` (
   `pa_comentarios` varchar(100) NOT NULL DEFAULT 'Ninguno.',
   `pa_freg` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `pagos`
+--
+
+INSERT INTO `pagos` (`pa_id`, `pa_usuario`, `pa_cantidad`, `pa_moneda`, `pa_metodo`, `pa_confirmado`, `pa_imagen`, `pa_comentarios`, `pa_freg`) VALUES
+(8, 'cpwonlin', '100', 'USD', 'PayPal', 0, '', 'Ninguno.', '2018-04-03');
 
 -- --------------------------------------------------------
 
@@ -188,7 +195,7 @@ ALTER TABLE `precios`
 -- AUTO_INCREMENT de la tabla `datos_oficiales`
 --
 ALTER TABLE `datos_oficiales`
-  MODIFY `do_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `do_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `informaciones_u`
@@ -200,13 +207,13 @@ ALTER TABLE `informaciones_u`
 -- AUTO_INCREMENT de la tabla `ordenes`
 --
 ALTER TABLE `ordenes`
-  MODIFY `o_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `o_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `pagos`
 --
 ALTER TABLE `pagos`
-  MODIFY `pa_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pa_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `precios`
@@ -218,4 +225,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-

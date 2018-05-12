@@ -1,3 +1,4 @@
+<!--Administradores-->
 <section class="perfil">
 	<ul class="arriba">
 		<li tag="1">General</li>
@@ -281,6 +282,37 @@
 							<div class="cam">
 								<a class="btn-gen" tag="reportar_aprobacion_pago">Guardar</a>
 							</div>
+						</div>
+					</article>
+				<!--Modificar precios de los planes-->
+					<article class="bloque b2">
+						<h4>Precios de los planes</h4>
+						<div class="tabla_gen">
+							<div class="fil pr">
+								<div class="cam">Precio</div>
+								<div class="cam">Plan</div>
+							</div>
+								<?php
+									$reg = $mysqli->query("SELECT * FROM precios ORDER BY p_id ASC");
+									if($reg->num_rows === 0)
+										echo "No hay precios disponibles.";
+									while($ro = $reg->fetch_array()){
+										$p_id = $ro['p_id'];
+										$p_plan = $ro['p_plan'];
+										$p_moneda = $ro['p_moneda'];
+										$p_valor = $ro['p_valor'];
+										$p_freg = $ro['p_freg'];
+								?>	
+									<div class="fil">
+										<div class="cam"><input type="text" name="p_plan" class="<?=$p_id?>" value="<?=$p_plan?>"/></div>
+										<div class="cam"><input type="text" name="p_moneda" class="<?=$p_id?>" value="<?=$p_moneda?>"/></div>
+										<div class="cam"><input type="text" name="p_valor" class="<?=$p_id?>" value="<?=$p_valor?>"/></div>
+										<div class="cam"><?=$p_freg?></div>
+										<div class="cam"><a class="btn-gen2 modificar_precio" tag="<?=$p_id?>">Modificar</a></div>
+									</div>
+								<?php
+									}
+								?>
 						</div>
 					</article>
 			</article>

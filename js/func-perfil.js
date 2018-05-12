@@ -188,7 +188,7 @@ $(document).ready(function(){
 						var retrasar = setTimeout(mov, 3000);
 					});
 			});
-		//Información
+		//Fase
 			$('#cpwonline a[tag="reportar_fase"]').click(function(e){
 				//Animación
 					$('#cpwonline div.espera').css('right', '.5cm');
@@ -214,6 +214,23 @@ $(document).ready(function(){
 					var tipo = "do_pagado";
 				//Llamada AJAX
 					$.post("../enlaces/reportes.php", {do_id:do_id, tipo:tipo},function(r){
+						$('#cpwonline div.espera').html(r);
+						var retrasar = setTimeout(mov, 3000);
+					});
+			});
+		//Modificado de precios
+			$('#cpwonline a.modificar_precio').click(function(e){
+				//Animación
+					$('#cpwonline div.espera').css('right', '.5cm');
+					$('#cpwonline div.espera').html('Espere | <span>CPW Online</span>');
+				//Recolección de datos
+					var p_id = $(this).attr('tag');
+					var p_plan= $('#cpwonline input[name="p_plan"].'+p_id).val();
+					var p_moneda= $('#cpwonline input[name="p_moneda"].'+p_id).val();
+					var p_valor= $('#cpwonline input[name="p_valor"].'+p_id).val();
+					var tipo = "modifica_precio";
+				//Llamada AJAX
+					$.post("../enlaces/reportes.php", {p_id:p_id, p_plan:p_plan, p_moneda:p_moneda, p_valor:p_valor, tipo:tipo},function(r){
 						$('#cpwonline div.espera').html(r);
 						var retrasar = setTimeout(mov, 3000);
 					});

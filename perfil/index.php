@@ -49,9 +49,11 @@
 				<?php
 					}else{
 						if($_SESSION['o_admin']=="0"){
-							include('0.php');
+							//Sección para usuarios normales
+								include('0.php');
 						}elseif($_SESSION['o_admin']=="1"){
-							include('1.php');
+							//Sección para los administradores
+								include('1.php');
 						}
 					}
 				?>
