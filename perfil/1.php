@@ -289,14 +289,15 @@
 						<h4>Precios de los planes</h4>
 						<div class="tabla_gen">
 							<div class="fil pr">
-								<div class="cam">Precio</div>
 								<div class="cam">Plan</div>
+								<div class="cam">Moneda</div>
+								<div class="cam">Precio</div>
 							</div>
 								<?php
 									$reg = $mysqli->query("SELECT * FROM precios ORDER BY p_id ASC");
 									if($reg->num_rows === 0)
 										echo "No hay precios disponibles.";
-									while($ro = $reg->fetch_array()){
+									while($ro = $reg->fetch_array()){ 
 										$p_id = $ro['p_id'];
 										$p_plan = $ro['p_plan'];
 										$p_moneda = $ro['p_moneda'];
