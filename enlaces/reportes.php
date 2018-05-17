@@ -130,6 +130,14 @@
 			else
 				echo 'Ha ocurrido un error al realizar la operaci&oacute;n';
 		break;
+		case 'do_pagado':
+			$do_id = $_POST['do_id'];
+			$con = $mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'Pagado' WHERE do_id = '".$do_id."' ");
+			if($con)
+				echo 'Dato oficial Pagado';
+			else
+				echo 'Ha ocurrido un error al realizar la operaci&oacute;n';
+		break;
 		case 'informacion':
 			$iu_titulo = $_POST['iu_titulo'];
 			$iu_contenido = $_POST['iu_contenido'];

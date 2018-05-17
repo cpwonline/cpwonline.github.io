@@ -69,12 +69,12 @@
 							$do_usuario = $ro['do_usuario'];
 							$do_dominio = $ro['do_dominio'];
 							$do_estado_pagina = $ro['do_estado_pagina'];
-							$do_estado_cuenta = $ro['do_estado_cuenta'];
+							$do_fase = $ro['do_fase'];
 							$do_freg = $ro['do_freg'];
 					?>
 						<p class="list_datos">Dominio: <strong><a href="<?=$do_dominio?>" target="_blank"><?=$do_dominio?></a></strong></p>
 						<p class="list_datos">Estado de p&aacute;gina: <strong><?=$do_estado_pagina?></strong></p>
-						<p class="list_datos">Estado de la cuenta: <strong><?=$do_estado_cuenta?></strong></p>
+						<p class="list_datos">Estado de fase: <strong><?=$do_fase?></strong></p>
 						<p class="list_datos">Fecha de registro: <strong><?=$do_freg?></strong></p>
 					<?php
 						}
@@ -148,44 +148,61 @@
 						</form>
 					</article>
 				<!--Ciclo-->
-					<article class="bloque b1">
+					<article class="bloque b2">
 						<h4>Ciclo</h4>
-						<div class="tabla_gen">
-							<div class="fil pr">
-								<div class="cam">Dominio</div>
-								<div class="cam">Ciclo</div>
-								<div class="cam">Plan</div>
-								<div class="cam">Pagado</div>
-							</div>
-								<?php
-									$con = $mysqli->query("SELECT * FROM datos_oficiales WHERE do_usuario = '".$_SESSION['o_usuario']."' ");
-									if($con->num_rows===0){
-										echo 'No hay datos encontrados';
-									}
+							<div class="tabla_gen">
+								<div class="fil pr">
+									<div class="cam">Dominio:</div>
+									<div class="cam">Plan:</div>
+									<div class="cam">Estado de cuenta:</div>
+									<div class="cam">&Uacute;ltimo ciclo pago</div>
+									<div class="cam">D&iacute;as sin pagar</div>
+								</div>
+				<?php
+								$con = $mysqli->query("SELECT * FROM datos_oficiales");
+								if($con->num_rows === 0){
+									echo '<p class="list_datos">No hay datos disponibles.</p>';
+								}else{
 									while($ro = $con->fetch_array()){
 										$do_id = $ro['do_id'];
+										$do_usuario = $ro['do_usuario'];
 										$do_dominio = $ro['do_dominio'];
 										$do_ciclo = $ro['do_ciclo'];
+										$do_mes = $ro['do_mes'];
 										$do_plan = $ro['do_plan'];
+										$do_estado_pagina = $ro['do_estado_pagina'];
 										$do_estado_cuenta = $ro['do_estado_cuenta'];
+										$dias_sin_pagar = "N/A";
 										//Verificación que el mes pagado sea este mes
-											$res = verificacion_ciclo($ciclo, $mes);
+											$res = verificacion_ciclo($do_ciclo, $do_mes);
 											
 										if($res){
-											$con1->$mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'No pagado' WHERE do_id = '".$do_id."'");
-												$do_estado_cuenta = "<strong color='red'>No Pagado</strong>";
+											$con1 = $mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'No pagado' WHERE do_id = '".$do_id."'");
+												$do_estado_cuenta = "<strong color='red'>No pagado</strong>";
+												$dias_sin_pagar = date('d')-$do_ciclo;
 										}else
 												$do_estado_cuenta = "<span color='green'>Pagado</span>";
-								?>
-										<div class="cam"><?=$do_dominio?></div>
-										<div class="cam"><?=$do_ciclo?></div>
-										<div class="cam"><?=$do_plan?></div>
-										<div class="cam"><?=$do_estado_cuenta?></div>
-								<?php
+											
+										$do_freg = $ro['do_freg'];
+										if($do_estado_cuenta == "<span color='green'>Pagado</span>" && $do_estado_pagina == "Oficial"){
+											echo '<div class="fil bien">';
+										}elseif($do_estado_cuenta == "<strong color='red'>No pagado</strong>" && $do_estado_pagina == "Oficial"){
+											echo '<div class="fil mal">';
+										}elseif($do_estado_pagina == "De prueba"){
+											echo '<div class="fil">';
+										}
+				?>
+											<div class="cam es"><p class="es_div"><?=$do_dominio?></p></div>
+											<div class="cam"><?=$do_plan?></div>
+											<div class="cam"><?=$do_estado_cuenta?></div>
+											<div class="cam"><?=$do_ciclo?>/<?=mes($do_mes)?></div>
+											<div class="cam"><?=$dias_sin_pagar?></div>
+										</div>
+				<?php
 									}
-								?>
+								}
+				?>
 							</div>
-						</div>
 					</article>
 				<!--Mis pagos-->
 					<article class="bloque b2">

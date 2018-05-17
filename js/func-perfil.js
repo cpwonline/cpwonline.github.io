@@ -188,6 +188,20 @@ $(document).ready(function(){
 						var retrasar = setTimeout(mov, 3000);
 					});
 			});
+		//Categorizar un dato oficial como Pagado
+			$('#cpwonline a.pagado_do').click(function(e){
+				//Animación
+					$('#cpwonline div.espera').css('right', '.5cm');
+					$('#cpwonline div.espera').html('Espere | <span>CPW Online</span>');
+				//Recolección de datos
+					var do_id = $(this).attr('tag');
+					var tipo = "do_pagado";
+				//Llamada AJAX
+					$.post("../enlaces/reportes.php", {do_id:do_id, tipo:tipo},function(r){
+						$('#cpwonline div.espera').html(r);
+						var retrasar = setTimeout(mov, 3000);
+					});
+			});
 	//Click al boton de subir imagen de pago
 		$('#cpwonline a.subir_imagen_pago').click(function(e){
 				var pa_id = $(this).attr('tag');

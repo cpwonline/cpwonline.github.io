@@ -122,7 +122,7 @@
 											<div class="cam"><?=$do_plan?></div>
 											<div class="cam"><?=$do_estado_pagina?></div>
 											<div class="cam"><?=$do_estado_cuenta?></div>
-											<div class="cam"><?=$do_ciclo?>/<?=$do_mes?></div>
+											<div class="cam"><?=$do_ciclo?>/<?=mes($do_mes)?></div>
 											<div class="cam"><?=$dias_sin_pagar?></div>
 											<div class="cam"><?=$do_fase?></div>
 											<div class="cam"><?=$do_freg?></div>
@@ -197,6 +197,7 @@
 						<div class="tabla_gen pagos">
 							<div class="fil pr">
 							<div class="cam">ID de pago</div>
+							<div class="cam">Usuario</div>
 							<div class="cam">Cantidad</div>
 							<div class="cam">Moneda</div>
 							<div class="cam">M&eacute;todo</div>
@@ -206,11 +207,12 @@
 							<div class="cam">Imagen</div>
 							</div>
 							<?php
-							$con = $mysqli->query("SELECT * FROM pagos ");
+							$con = $mysqli->query("SELECT * FROM pagos ORDER BY pa_freg DESC");
 							if($con->num_rows === 0)
 								echo 'No hay pagos reportados';
 							while($ro = $con->fetch_array()){
 								$pa_id = $ro['pa_id'];
+								$pa_usuario = $ro['pa_usuario'];
 								$pa_cantidad = $ro['pa_cantidad'];
 								$pa_moneda = $ro['pa_moneda'];
 								$pa_metodo = $ro['pa_metodo'];
@@ -222,6 +224,7 @@
 							?>
 								<div class="fil">
 									<div class="cam"><?=$pa_id?></div>
+									<div class="cam es"><p><?=$pa_usuario?></p></div>
 									<div class="cam"><?=$pa_cantidad?></div>
 									<div class="cam"><?=$pa_moneda?></div>
 									<div class="cam"><?=$pa_metodo?></div>
