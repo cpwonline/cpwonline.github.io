@@ -132,8 +132,9 @@
 		break;
 		case 'do_pagado':
 			$do_id = $_POST['do_id'];
-			$con = $mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'Pagado' WHERE do_id = '".$do_id."' ");
-			if($con)
+			$do_mes = date('m');
+			$con1 = $mysqli->query("UPDATE datos_oficiales SET do_estado_cuenta = 'Pagado', do_mes = '".$do_mes."' WHERE do_id = '".$do_id."' ");
+			if($con1)
 				echo 'Dato oficial Pagado';
 			else
 				echo 'Ha ocurrido un error al realizar la operaci&oacute;n';
