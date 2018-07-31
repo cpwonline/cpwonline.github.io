@@ -9,7 +9,7 @@
 				"nosotros/" => "Nosotros"
 			];
 ?>
-				<div class="logo"><a href=""><img src="images/logo.png" alt=""></a></div>
+				<div class="logo"><a href=""><img src="images/logo.png" alt=""/></a></div>
 				<img class="nav_icon" src="images/nav_icon.png" alt=""/>
 				<nav class="menu">
 					<ul class="menu">
@@ -39,7 +39,7 @@
 				"../nosotros/" => "Nosotros"
 			];
 ?>
-				<div class="logo"><a href="../"><img src="../images/logo.png" alt=""></a></div>
+				<div class="logo"><a href="../"><img src="../images/logo.png" alt=""/></a></div>
 				<img class="nav_icon" src="../images/nav_icon.png" alt=""/>
 				<nav class="menu">
 					<ul class="menu">

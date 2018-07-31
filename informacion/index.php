@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<title>Informaci&oacute;n | CPW Online</title>
-		<?php 
+		<?php
 			$dir = "head.php";
 			$lug = "otro";
 			if(file_exists($dir)){
@@ -33,10 +33,10 @@
 				<div class="col_1">
 					<div class="col_1_izq">
 						<h4>Descarga nuestros PDFs</h4>
-						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si deseas tener todos nuestros manuales, informaciones, modelos, planes, entre otras cosas; descarga nuestros PDFs con informaci&oacute;n m&aacute;s detallada para que est&eacute;s con nostros <strong>Online</strong> y <strong>Offline</strong></p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si deseas tener todos nuestros manuales, informaciones, modelos, planes, entre otras cosas; descarga nuestros PDFs con informaci&oacute;n m&aacute;s detallada para que est&eacute;s con nostros <strong>Online</strong> y <strong>Offline</strong>.</p>
 					</div>
 					<div class="col_1_der">
-						<img src="img_inf_pdf.png" alt=""><br>
+						<img src="img_inf_pdf.png" alt=""/><br>
 					</div>
 				</div>
 				<div class="col_1" style="background:#386;" id="inf_compra">
@@ -47,7 +47,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/informacion_compra_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/informacion_compra_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/informacion_compra_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/planes_precios_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/planes_precios_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/planes_precios_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/modelos_web_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/modelos_web_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/modelos_web_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/dal15_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/dal15_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/dal15_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/sgac_manual_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/sgac_manual_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/sgac_manual_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 						</p>
 					</div>
 					<div class="col_1_der">
-						<img class="exc" src="img/empresa_cpwonline.png" alt=""><br>
+						<img class="exc" src="img/empresa_cpwonline.png" alt=""/><br>
 						<a class="btn-gen2" href="pdf/empresa_cpwonline.pdf" target="_blank">Descargar</a>
 					</div>
 				</div>
