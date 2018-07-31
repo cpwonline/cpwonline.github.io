@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-03-2018 a las 16:02:06
+-- Tiempo de generación: 31-07-2018 a las 07:09:29
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -29,13 +29,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `datos_oficiales` (
-  `do_id` int(100) NOT NULL,
+  `do_id` int(10) NOT NULL,
   `do_usuario` varchar(50) NOT NULL,
-  `do_dominio` varchar(100) NOT NULL,
-  `do_estado_pagina` varchar(9) NOT NULL DEFAULT 'De prueba',
-  `do_estado_cuenta` varchar(10) NOT NULL DEFAULT 'Activo',
-  `do_ciclo` varchar(20) NOT NULL,
+  `do_dominio` varchar(50) NOT NULL,
+  `do_ciclo` int(2) NOT NULL,
+  `do_mes` int(2) NOT NULL,
   `do_plan` varchar(14) NOT NULL,
+  `do_estado_pagina` varchar(9) NOT NULL DEFAULT 'De prueba',
+  `do_estado_cuenta` varchar(9) NOT NULL DEFAULT 'Pagado',
+  `do_fase` varchar(13) NOT NULL DEFAULT 'Activado',
   `do_freg` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -148,6 +150,12 @@ INSERT INTO `precios` (`p_id`, `p_plan`, `p_moneda`, `p_valor`, `p_freg`) VALUES
 --
 
 --
+-- Indices de la tabla `datos_oficiales`
+--
+ALTER TABLE `datos_oficiales`
+  ADD PRIMARY KEY (`do_id`);
+
+--
 -- Indices de la tabla `informaciones_u`
 --
 ALTER TABLE `informaciones_u`
@@ -177,6 +185,12 @@ ALTER TABLE `precios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `datos_oficiales`
+--
+ALTER TABLE `datos_oficiales`
+  MODIFY `do_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de la tabla `informaciones_u`
 --
 ALTER TABLE `informaciones_u`
@@ -186,13 +200,13 @@ ALTER TABLE `informaciones_u`
 -- AUTO_INCREMENT de la tabla `ordenes`
 --
 ALTER TABLE `ordenes`
-  MODIFY `o_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `o_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `pagos`
 --
 ALTER TABLE `pagos`
-  MODIFY `pa_id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `pa_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `precios`
@@ -204,3 +218,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
