@@ -152,5 +152,63 @@
 			else
 				echo 'Ha ocurrido un error al a&ntilde;adir la informaci&oacute;n';
 		break;
+		case 'fase':
+			$do_usuario = $_POST['do_usuario'];
+			$do_dominio = $_POST['do_dominio'];
+			$do_fase = $_POST['do_fase'];
+			if(empty($do_usuario) || empty($do_dominio)){
+				echo 'Disculpe, hay campos que no deben estar vac&iacute;os.';
+				exit;
+			}
+			$con = $mysqli->query("UPDATE datos_oficiales SET do_fase = '".$do_fase."' WHERE do_usuario = '".$do_usuario."' AND do_dominio = '".$do_dominio."' ");
+			if($con){
+				/*Mensaje al correo1*/
+					$para  = $do_usuario;
+					$titulo = "¡Su web ha cambiado de fase: <".$do_fase.">! | CPW Online";
+					$mensaje = '
+					<html>
+						<head>
+							<title>'.$titulo.'</title>
+							<meta name="charset" content="utf-8"/>
+							<meta name="author" content="CPW Online"/>
+							<meta name="copyright" content="CPW Online"/>
+							<style>
+								div.prin{
+									display:block;color:#444;font-size:12pt;margin-bottom:.1cm;
+								}
+								.cab{
+									padding:.5cm;background:#00bdf0;margin-bottom:.1cm;text-align:center;
+								}
+								.cab span{
+									font-size:14pt;color:#fff;
+								}
+						  </style>
+						</head>
+						<body>
+							<nav class="cab">
+								<span>CPW Online</span>
+							</nav>
+							<div class="prin">Dominio: <strong>'.$do_dominio.'</strong></div>
+							<div class="prin">Hola '.$do_usuario.', su cuenta ha cambiado de fase; esto ocurre cuando han transcurridos varios d&iacute;as sin haber reportado el pago del plan. Este mensaje tambi&eacute;n llega cuando su web se activa.</div>
+						</body>
+					</html>
+					';
+					// Para enviar un correo HTML, debe establecerse la cabecera Content-type
+					$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+					$cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+					// Cabeceras adicionales
+					$cabeceras .= 'To: CPW Online <grupocpwonline@gmail.com>' . "\r\n";
+					$cabeceras .= 'To: Usted <'.$do_usuario.'>' . "\r\n";
+
+					// Enviarlo
+					mail($para, $titulo, $mensaje, $cabeceras);
+					
+				/*Fin Mensaje al correo1*/
+				
+				echo 'Fase cambiada correctamente.';
+			}else
+				echo 'Ha ocurrido un error al cambiar la fase.';
+		break;
 	}
 ?>

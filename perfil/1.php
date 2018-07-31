@@ -184,6 +184,33 @@
 								</div>
 							</div>
 						</article>
+					<!--Cambiar de Fase-->
+						<article class="bloque b1">
+							<h4>Cambiar la fase</h4>
+							<div class="tabla_gen">
+								<div class="fil">
+									<div class="cam">Usuario:</div>
+									<div class="cam"><input type="text" name="do_usuario_fase" placeholder="Usuario"/></div>
+								</div>
+								<div class="fil">
+									<div class="cam">Dominio:</div>
+									<div class="cam"><input type="text" name="do_dominio_fase" placeholder="Dominio"/></div>
+								</div>
+								<div class="fil">
+									<div class="cam">Fase: </div>
+									<div class="cam">
+										<select name="do_fase_fase">
+											<option value="Activado">Activado</option>
+											<option value="Reposando">Reposando</option>
+											<option value="Suspendido">Suspendido</option>
+										</select>
+									</div>
+								</div>
+								<div class="fil">
+									<div class="cam"><a class="btn-gen" tag="reportar_fase">Guardar</a></div>
+								</div>
+							</div>
+						</article>
 			</article>
 		<!--Estado-->
 			<article tag="2">

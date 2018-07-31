@@ -188,6 +188,22 @@ $(document).ready(function(){
 						var retrasar = setTimeout(mov, 3000);
 					});
 			});
+		//Información
+			$('#cpwonline a[tag="reportar_fase"]').click(function(e){
+				//Animación
+					$('#cpwonline div.espera').css('right', '.5cm');
+					$('#cpwonline div.espera').html('Espere | <span>CPW Online</span>');
+				//Recolección de datos
+					var do_usuario = $('#cpwonline input[name="do_usuario_fase"]').val();
+					var do_dominio = $('#cpwonline input[name="do_dominio_fase"]').val();
+					var do_fase = $('#cpwonline select[name="do_fase_fase"]').val();
+					var tipo = "fase";
+				//Llamada AJAX
+					$.post("../enlaces/reportes.php", {do_usuario:do_usuario, do_dominio:do_dominio, do_fase:do_fase, tipo:tipo},function(r){
+						$('#cpwonline div.espera').html(r);
+						var retrasar = setTimeout(mov, 3000);
+					});
+			});
 		//Categorizar un dato oficial como Pagado
 			$('#cpwonline a.pagado_do').click(function(e){
 				//Animación
