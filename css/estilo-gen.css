@@ -5,10 +5,13 @@
 			margin:0;
 		}
 		#cpwonline{
-			font-family: 'Source Sans Pro', sans-serif;
+			font: 12pt fGen, sans-serif, 'Source Sans Pro';
 			color:#444;
 		}
-			
+		@font-face{
+			font-family: 'fGen';
+			src: url('fuentes/ModernSans-Light.otf');
+		}
 		#cpwonline .btn-gen{
 			font-size:12pt;
 			color:#fff;
@@ -533,7 +536,7 @@
 			#cpwonline article.art_5 div.col_2 h5,
 			#cpwonline article.art_5 div.col_3 h5{
 				font-size:18pt;
-				color: #000;
+				color: #FFF;
 				border-bottom:.3cm;
 			}
 			#cpwonline article.art_5 div.col_1 p,
@@ -543,14 +546,7 @@
 				line-height: 1cm;
 				color:#fff;
 				text-align: justify;
-			}
-			#cpwonline article.art_5 div.col_1 a,
-			#cpwonline article.art_5 div.col_2 a,
-			#cpwonline article.art_5 div.col_3 a{
-				position:absolute;
-				bottom:0;
-				left:0;
-				width:90%;
+				margin-bottom:.7cm;
 			}
 		
 	/*BLOQUE: Footer---------------------------------------------*/
@@ -613,7 +609,7 @@
 		
 /*PÁGINA:MODELOS---------------------------------------------------------*/
 	#cpwonline article.art_6{
-		overflow: :hidden;
+		overflow: hidden;
 		background: #ccc;
 		padding:.1cm;
 		text-align:center;
