@@ -26,11 +26,14 @@
 				<link rel="stylesheet" href="css/efectos.css">
 				<link rel="stylesheet" href="css/estilo-mod.css">
 				<link rel="stylesheet" href="css/estilo-res.css">
+				<!--<link rel="stylesheet" href="static/css/bootstrap.css">
+				<link rel="stylesheet" href="static/css/bootstrap-theme.css">-->
 			<!--Links de JavaScript-->
 				<script src="js/jquery-3.0.0.min.js"></script>
 				<script src="js/func-gen.js"></script>
 				<script src="js/func-ordenar.js"></script>
 				<script src="js/func-perfil.js"></script>
+				<!--<script src="static/js/bootstrap.js"></script>-->
 <?php
 		}else{
 ?>
@@ -40,11 +43,14 @@
 				<link rel="stylesheet" href="../css/efectos.css"/>
 				<link rel="stylesheet" href="../css/estilo-mod.css"/>
 				<link rel="stylesheet" href="../css/estilo-res.css"/>
+				<!--<link rel="stylesheet" href="../static/css/bootstrap.css">
+				<link rel="stylesheet" href="../static/css/bootstrap-theme.css">-->
 			<!--Links de JavaScript-->
 				<script src="../js/jquery-3.0.0.min.js"></script>
 				<script src="../js/func-gen.js"></script>
 				<script src="../js/func-ordenar.js"></script>
 				<script src="../js/func-perfil.js"></script>
+				<!--<script src="../static/js/bootstrap.js"></script>-->
 <?php
 		}
 ?>
