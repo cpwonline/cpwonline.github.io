@@ -45,9 +45,9 @@
 			<nav class="menu">
 				<ul class="menu">
 					<li class="cerrar_nav"><a class="cerrar_nav">x</a></li>
-					<li><a id="prin" href=""></a>Home</li>
-					<li><a href=""></a>Soluciones</li>
-					<li><a href=""></a>Contacto</li>
+					<li><a id="prin" href="">Home</a></li>
+					<li><a href="">Solutions</a></li>
+					<li><a href="">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -58,7 +58,7 @@
 				<div class="rota_1">
 					<img src="images/img_art_1.png" alt="">
 					<div class="text">
-						<h3 class="swing" id="men_unaweb" onclick="fondo_ale();">¿Una web?</h3>
+						<h3 class="swing" id="men_unaweb" onclick="fondo_ale();">&iquest;Una web&quest;</h3>
 						<h3>&iexcl;Ten la tuya&excl;</h3>
 						<a href="perfil/" class="btn-gen">Login</a>
 						<a href="contacto/" class="btn-gen4">Contactar</a>
@@ -68,20 +68,10 @@
 			<article class="art_2">
 				<h3>Nuestros Planes y precios</h3>
 				<ul class="list_pyp">
-					<?php
-						$moneda="USD";
-						$con = $mysqli->query("SELECT * FROM precios WHERE p_moneda='".$moneda."' ORDER BY p_freg");
-						while($ro = $con->fetch_array()){
-							$p_plan = $ro['p_plan'];
-							$p_moneda = $ro['p_moneda'];
-							$p_valor = $ro['p_valor'];
-							$precio[$p_plan] = $p_valor;
-						}
-					?>
 					<a href="#mod_plan1" onclick="ver_plan('0');"><li class="pyp_1">
 						<div><span>Economic</span></div>
 						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
-						<div><span>Administración por SGAC | ECONOMIC</span></div>
+						<div><span>Administraci&oacute;n por SGAC | ECONOMIC</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla</span></div>
 						<div><span>M&aacute;s...</span></div>
 						<div><span class="ult1">$ <?=$precio['Economic']?>/mes</span></div>
@@ -89,7 +79,7 @@
 					<a href="#mod_plan2" onclick="ver_plan('1');"><li class="pyp_2">
 						<div><span>Deluxe</span></div>
 						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
-						<div><span>Administración por SGAC | DELUXE</span></div>
+						<div><span>Administraci&oacute;n por SGAC | DELUXE</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla o Personalizado</span></div>
 						<div><span>Mucho M&aacute;s...</span></div>
 						<div><span class="ult2">$ <?=$precio['Deluxe']?>/mes</span></div>
@@ -97,7 +87,7 @@
 					<a href="#mod_plan3" onclick="ver_plan('2');"><li class="pyp_3">
 						<div><span>Ultimate</span></div>
 						<div><span>Sitio Web, Dominio y Hosting incluido</span></div>
-						<div><span>Administración por SGAC | ULTIMATE</span></div>
+						<div><span>Administraci&oacute;n por SGAC | ULTIMATE</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla o Personalizado</span></div>
 						<div><span>Much&iacute;simo M&aacute;s...</span></div>
 						<div><span class="ult3">$ <?=$precio['Ultimate']?>/mes</span></div>
@@ -105,7 +95,7 @@
 					<a href="#mod_plan4" onclick="ver_plan('3');"><li class="pyp_4">
 						<div><span>Super-Economic</span></div>
 						<div><span>Sitio Web, Dominio (.ve) y Hosting incluido</span></div>
-						<div><span>Administración por SGAC | SUPER-ECONOMIC</span></div>
+						<div><span>Administraci&oacute;n por SGAC | SUPER-ECONOMIC</span></div>
 						<div><span>Dise&ntilde;o web: Plantilla</span></div>
 						<div><span>Much&iacute;simo M&aacute;s...</span></div>
 						<div><span class="ult4">$ <?=$precio['Super-Economic']?>/mes</span></div>
@@ -213,11 +203,11 @@
 				</div>
 				<div class="col_3">
 					<h5>Mejores resultados</h5>
-					<p>¡En CPW Online rompemos las barreras: precio bajo - buena calidad, precio alto - excelente calidad!</p>
+					<p>&iexcl;En CPW Online rompemos las barreras: precio bajo - buena calidad, precio alto - excelente calidad!</p>
 				</div>
 			</article>
 			<article class="art_4">
-				<div class="text"><h4>¿Qu&eacute; esperas para comprar tu web?</h4><a href="contacto/?orden=1" class="btn-gen">Ordenar</a></div>
+				<div class="text"><h4>&iquest;Qu&eacute; esperas para comprar tu web?</h4><a href="contacto/?orden=1" class="btn-gen">Ordenar</a></div>
 			</article>
 			<article class="art_5">
 				<h3>Nuestros beneficios</h3>
@@ -230,13 +220,13 @@
 				<div class="col_2">
 					<img src="images/g_din.png" alt=""/>
 					<h5>Ahorra dinero</h5>
-					<p>Nuestros Planes y precios son &uacute;nicos en el mercado, ¡Compru&eacute;balo por ti mismo! Con precios tan induditables ¿C&oacute;mo dudar?</p>
+					<p>Nuestros Planes y precios son &uacute;nicos en el mercado, &iexcl;Compru&eacute;balo por ti mismo! Con precios tan induditables &iquest;C&oacute;mo dudar?</p>
 					<a class="btn-gen" href="informacion/#planes_precios">Leer m&aacute;s</a>
 				</div>
 				<div class="col_3">
 					<img src="images/g_ser.png" alt=""/>
 					<h5>Servicio de prueba</h5>
-					<p>&iquest;Sab&iacute;as que puedes pedir tu p&aacute;gina web gratuitamente? ¡S&iacute;! Si tienes temor de perder dinero, tiempo o esfuerzo, nuestras web primero se crean gratuitamente, y si quieres comprar o no, es tu decisi&oacute;n; sin compromisos.</p>
+					<p>&iquest;Sab&iacute;as que puedes pedir tu p&aacute;gina web gratuitamente? &iexcl;S&iacute;! Si tienes temor de perder dinero, tiempo o esfuerzo, nuestras web primero se crean gratuitamente, y si quieres comprar o no, es tu decisi&oacute;n; sin compromisos.</p>
 					<a class="btn-gen" href="informacion/#inf_compra">Leer m&aacute;s</a>
 				</div>
 			</article>
