@@ -6,33 +6,50 @@
 	-->
 	<head>
 		<title>Creaci&oacute;n de P&aacute;ginas Web Comerciales, para Empresas, para PYMES, Personales y m&aacute;s | CPW Online</title>
-		<?php 
-			$dir = "head.php";
-			$lug = "home";
-			if(file_exists($dir)){
-				include('head.php');
-				head($lug);
-			}else{
-				include('../head.php');
-				head($lug);
-			}
-			session_start();
-			require_once('mysqli_db.php');
-		?>
+		<!--Etiquetas META-->
+			<meta name="charset" content="utf-8"/>
+			<meta name="author" content="CPW Online"/>
+			<meta name="copyright" content="CPW Online"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<meta name="description" content=
+				"Somos una empresa creadora de sitios web para grandes, medianas, peque&ntilde;as y muy peque&ntilde;as empresas."
+			/>
+			<meta name="keywords" content="p&aacute;ginas web, servidores, hosting, emprender, website, dominio, empresas"/>
+			<!--Color en Chrome, Firefox y Opera-->
+				<meta name="theme-color" content="#006699"/>
+			<!--Color en Windows Phone-->
+				<meta name="msapplication-navbutton-color" content="#006699"/>
+			<!--Color en iOS y Safari-->
+				<meta name="apple-mobile-web-app-capable" content="yes"/>
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+			<!--Icon-->	
+				<link rel="shorcut icon" href="images/logo_small.png">
+			<!--Links de css-->
+				<link rel="stylesheet" href="css/estilo-gen.css">
+				<link rel="stylesheet" href="css/efectos.css">
+				<link rel="stylesheet" href="css/estilo-mod.css">
+				<link rel="stylesheet" href="css/estilo-res.css">
+				<!--<link rel="stylesheet" href="static/css/bootstrap.css">
+				<link rel="stylesheet" href="static/css/bootstrap-theme.css">-->
+			<!--Links de JavaScript-->
+				<script src="js/jquery-3.0.0.min.js"></script>
+				<script src="js/func-gen.js"></script>
+				<script src="js/func-ordenar.js"></script>
+				<script src="js/func-perfil.js"></script>
+				<!--<script src="static/js/bootstrap.js"></script>-->
 	</head>
 	<body id="cpwonline">
 		<header class="cabecera">
-			<?php 
-				$dir = "cab.php";
-				$lug = "home";
-				if(file_exists($dir)){
-					include('cab.php');
-					cab($lug);
-				}else{
-					include('../cab.php');
-					cab($lug);
-				}
-			?>
+			<div class="logo"><a href=""><img src="images/logo.png" alt=""/></a></div>
+			<img class="nav_icon" src="images/nav_icon.png" alt=""/>
+			<nav class="menu">
+				<ul class="menu">
+					<li class="cerrar_nav"><a class="cerrar_nav">x</a></li>
+					<li><a id="prin" href=""></a>Home</li>
+					<li><a href=""></a>Soluciones</li>
+					<li><a href=""></a>Contacto</li>
+				</ul>
+			</nav>
 		</header>
 		<section class="contenedor">
 			<article class="art_1">
@@ -237,14 +254,9 @@
 			</article>
 		</section>
 		<footer class="pie">
-			<?php 
-				$dir = "pie.php";
-				if(file_exists($dir)){
-					include('pie.php');
-				}else{
-					include('../pie.php');
-				}
-			?>
+			<div class="copy">
+				<span>&copy; Todos los derechos reservados | <strong>CPW Online</strong></span>
+			</div>
 		</footer>
 	</body>
 </html>
